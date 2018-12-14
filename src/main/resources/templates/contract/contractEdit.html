@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>NEWDON</title>
+
+<link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
+<link th:href="@{/font-awesome/css/font-awesome.css}" rel="stylesheet" />
+
+<!-- Toastr style -->
+<link th:href="@{/css/plugins/toastr/toastr.min.css}" rel="stylesheet"/>
+
+<link th:href="@{/css/style.css}" rel="stylesheet" />
+
+<!-- summernote style -->
+<link th:href="@{/css/plugins/summernote/summernote.css}" rel="stylesheet" />
+<link th:href="@{/css/plugins/summernote/summernote-bs3.css}" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+		<nav class="navbar-default navbar-static-side" role="navigation" th:include="nav :: navigation"></nav>
+		<div id="page-wrapper" class="gray-bg">
+        	<div class="border-bottom" th:include="header :: headerTop"></div>
+      		<div class="row wrapper border-bottom white-bg page-heading" th:fragment="headerNav">
+		   		<div class="col-lg-10">
+		     		<h2>合同信息</h2>
+		          	<ol class="breadcrumb">
+			            <li>
+			            	<a href="#">首页</a>
+			            </li>
+			            <li>
+			            	<a>客户管理</a>
+			         	</li>
+			         	<li>
+			             	<a>合同信息</a>
+			          	</li>
+			          	<li class="active">
+			             	<strong>合同修改</strong>
+			          	</li>
+					</ol>
+		      	</div>
+		      	<div class="col-lg-2">
+		      	</div>
+		  	</div>
+        	<div class="wrapper wrapper-content animated fadeInRight">
+
+
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5>合同修改</h5>
+                            <div class="ibox-tools">
+                                <a class="collapse-link">
+                                    <i class="fa fa-chevron-up"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ibox-content">
+                            <form id="formTag" action="/contract/edit" method="POST" class="form-horizontal" enctype="multipart/form-data">
+
+                            	<input type="hidden" name="id" th:value="${contract.id}" />
+                                <input type="hidden" name="pageNum" th:value="${pageNum}" />
+                                <div class="form-group"><label class="col-sm-2 control-label">合同编号：</label>
+                                    <div class="col-sm-10">
+                                    	<input id="contractNumber" name="contractNumber" type="text" class="form-control" th:value="${contract.contractNumber}"/>
+                                    </div>
+                                </div>
+                                <div class="form-group"><label class="col-sm-2 control-label">合同类别：</label>
+                                    <div class="col-sm-10">
+                                        <input id="contractCategory" name="contractCategory" type="text" class="form-control" th:value="${contract.contractCategory}"/>
+                                    </div>
+                                </div>
+                                <div class="form-group"><label class="col-sm-2 control-label">签署日期：</label>
+                                    <div class="col-sm-10">
+                                        <input id="signDate" name="signDate" type="date" class="form-control" th:value="${contract.signDate}"/>
+                                    </div>
+                                </div>
+                                <div class="form-group"><label class="col-sm-2 control-label">业务人员：</label>
+                                    <div class="col-sm-10">
+                                        <input id="businessMan" name="businessMan" type="text" class="form-control" th:value="${contract.businessMan}"/>
+                                    </div>
+                                </div>
+                                <div class="form-group"><label class="col-sm-2 control-label">合同金额：</label>
+                                    <div class="col-sm-10">
+                                        <input id="contractMoney" name="contractMoney" type="number" class="form-control" th:value="${contract.contractMoney}"/>
+                                    </div>
+                                </div>
+                                <div class="form-group"><label class="col-sm-2 control-label">服务内容：</label>
+                                    <div class="col-sm-10">
+                                        <input id="serviceContent" name="serviceContent" type="text" class="form-control" th:value="${contract.serviceContent}"/>
+                                    </div>
+                                </div>
+                                <div class="form-group"><label class="col-sm-2 control-label">存量&amp;增量：</label>
+                                    <div class="col-sm-10">
+                                        <select name="increaseOrStock" id="increaseOrStock" class="form-control" >
+                                            <option value="存量" th:selected="${contract.increaseOrStock=='存量'}">存量</option>
+                                            <option value="增量" th:selected="${contract.increaseOrStock=='增量'}">增量</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group"><label class="col-sm-2 control-label">信息来源：</label>
+                                    <div class="col-sm-10">
+                                        <select name="informationSource" id="informationSource" class="form-control" >
+                                            <option value="自跑" th:selected="${contract.informationSource=='自跑'}">自跑</option>
+                                            <option value="互联网" th:selected="${contract.informationSource=='互联网'}">互联网</option>
+                                            <option value="渠道" th:selected="${contract.informationSource=='渠道'}">渠道</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group"><label class="col-sm-2 control-label">合作测评机构：</label>
+                                    <div class="col-sm-10">
+                                        <select name="evaluationOrganization" id="evaluationOrganization" class="form-control" >
+                                            <option value="国家网络与信息系统安全产品质量监督检验中心" th:selected="${contract.evaluationOrganization=='国家网络与信息系统安全产品质量监督检验中心'}">国家网络与信息系统安全产品质量监督检验中心</option>
+                                            <option value="上海市信息安全测评认证中心" th:selected="${contract.evaluationOrganization=='上海市信息安全测评认证中心'}">上海市信息安全测评认证中心</option>
+                                            <option value="上海交通大学(信息安全服务技术研究实验室)" th:selected="${contract.evaluationOrganization=='上海交通大学(信息安全服务技术研究实验室)'}">上海交通大学(信息安全服务技术研究实验室)</option>
+                                            <option value="上海计算机软件技术开发中心" th:selected="${contract.evaluationOrganization=='上海计算机软件技术开发中心'}">上海计算机软件技术开发中心</option>
+                                            <option value="上海市网络技术综合应用研究所" th:selected="${contract.evaluationOrganization=='上海市网络技术综合应用研究所'}">上海市网络技术综合应用研究所</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group"><label class="col-sm-2 control-label">采购方式：</label>
+                                    <div class="col-sm-10">
+                                        <select name="procurementMode" id="procurementMode" class="form-control" >
+                                            <option value="公开招标" th:selected="${contract.procurementMode=='公开招标'}">公开招标</option>
+                                            <option value="竞争性谈判" th:selected="${contract.procurementMode=='竞争性谈判'}">竞争性谈判</option>
+                                            <option value="上会审核" th:selected="${contract.procurementMode=='上会审核'}">上会审核</option>
+                                            <option value="单一来源" th:selected="${contract.procurementMode=='单一来源'}">单一来源</option>
+                                            <option value="直签" th:selected="${contract.procurementMode=='直签'}">直签</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group"><label class="col-sm-2 control-label">客户名称：</label>
+                                    <div class="col-sm-10">
+                                        <input id="customerName" name="customerName" type="text" class="form-control" th:value="${contract.customerName}"/>
+                                    </div>
+                                </div>
+
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <div class="col-sm-4 col-sm-offset-2">
+                                        <button id="submitButton" class="btn btn-primary" type="button">&nbsp;&nbsp;&nbsp;&nbsp;提&nbsp;&nbsp;&nbsp;&nbsp;交&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <a id="cancel" class="btn btn-primary" type="button" onclick="javascript:location.replace(this.href);event.returnValue=false;" href="query">&nbsp;&nbsp;&nbsp;&nbsp;取&nbsp;&nbsp;&nbsp;&nbsp;消&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        	<div class="footer" th:include="footer :: copyright"></div>
+      	</div>
+	</div>
+
+    <!-- Mainly scripts -->
+    <script th:src="@{/js/jquery-2.1.1.js}"></script>
+    <script th:src="@{/js/bootstrap.min.js}"></script>
+    <script th:src="@{/js/plugins/metisMenu/jquery.metisMenu.js}"></script>
+    <script th:src="@{/js/plugins/slimscroll/jquery.slimscroll.min.js}"></script>
+
+    <!-- Peity -->
+    <script th:src="@{/js/plugins/peity/jquery.peity.min.js}"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script th:src="@{/js/inspinia.js}"></script>
+    <script th:src="@{/js/plugins/pace/pace.min.js}"></script>
+
+    <!-- Toastr script -->
+    <script th:src="@{/js/plugins/toastr/toastr.min.js}"></script>
+
+    <!-- common -->
+    <script th:src="@{/js/common.js}"></script>
+
+    <!-- SUMMERNOTE -->
+    <script th:src="@{/js/plugins/summernote/summernote.min.js}"></script>
+
+    <script th:inline="javascript">
+		$(document).ready(function () {
+			//提交
+			$("#submitButton").click(function(){
+				/*if($("#title").val() == ""){
+					toastr.error('请输入文章标题','提示');
+					return;
+				}
+				if($("#category").val() == 0){
+					toastr.error('请选择文章分类','提示');
+					return;
+				}
+				var markupStr =  $('#summernote').code();
+				if(markupStr == ""){
+					toastr.error('请填写文章内容','提示');
+					return;
+				}
+				$("#content").val(markupStr);*/
+				$("#formTag").submit();
+			});
+		});
+    </script>
+    <script th:inline="javascript">
+            //取消
+            $("#cancel").click(function(){
+                window.location.href("/customer/customerList");
+            });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,765 @@
+2018-12-14 21:01:32,875 INFO [main] c.n.NewdonApplication [StartupInfoLogger.java:48] Starting NewdonApplication on Rlserim-TF with PID 8232 (D:\BaiduYunDownload\newdon\newdon-contract-manage\target\classes started by Rlserim in D:\BaiduYunDownload\newdon\newdon-contract-manage)
+2018-12-14 21:01:32,915 INFO [main] c.n.NewdonApplication [SpringApplication.java:593] No active profile set, falling back to default profiles: default
+2018-12-14 21:01:33,423 INFO [background-preinit] o.h.v.i.u.Version [Version.java:30] HV000001: Hibernate Validator 5.3.5.Final
+2018-12-14 21:01:33,558 INFO [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java:583] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@797cf65c: startup date [Fri Dec 14 21:01:33 CST 2018]; root of context hierarchy
+2018-12-14 21:01:36,329 INFO [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:89] Tomcat initialized with port(s): 80 (http)
+2018-12-14 21:01:36,350 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:179] Starting service [Tomcat]
+2018-12-14 21:01:36,351 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:179] Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-12-14 21:01:36,619 INFO [localhost-startStop-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:179] Initializing Spring embedded WebApplicationContext
+2018-12-14 21:01:36,620 INFO [localhost-startStop-1] o.s.w.c.ContextLoader [EmbeddedWebApplicationContext.java:276] Root WebApplicationContext: initialization completed in 3062 ms
+2018-12-14 21:01:36,908 INFO [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean [ServletRegistrationBean.java:190] Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-14 21:01:36,913 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-14 21:01:36,913 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-14 21:01:36,914 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-14 21:01:36,914 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-14 21:01:37,617 INFO [main] c.a.d.p.DruidDataSource [DruidDataSource.java:721] {dataSource-1} inited
+2018-12-14 21:01:40,244 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter [RequestMappingHandlerAdapter.java:534] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@797cf65c: startup date [Fri Dec 14 21:01:33 CST 2018]; root of context hierarchy
+2018-12-14 21:01:40,318 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/basic/add]}" onto public java.lang.String com.newdon.controller.BasicTechInfoController.add()
+2018-12-14 21:01:40,320 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/basic/update]}" onto public java.lang.String com.newdon.controller.BasicTechInfoController.update(com.newdon.entity.BasicTechInfo,org.springframework.ui.Model,java.lang.Integer)
+2018-12-14 21:01:40,321 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/basic/query]}" onto public java.lang.String com.newdon.controller.BasicTechInfoController.query(com.newdon.entity.BasicTechInfo,org.springframework.ui.Model,java.lang.Integer)
+2018-12-14 21:01:40,321 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/basic/deleteById]}" onto public java.lang.String com.newdon.controller.BasicTechInfoController.deleteById(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 21:01:40,322 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/basic/edit]}" onto public java.lang.String com.newdon.controller.BasicTechInfoController.edit(com.newdon.entity.BasicTechInfo,org.springframework.ui.Model,java.lang.Integer)
+2018-12-14 21:01:40,322 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/basic/insert],methods=[POST]}" onto public java.lang.String com.newdon.controller.BasicTechInfoController.addList(com.newdon.entity.BasicTechInfo,org.springframework.ui.Model)
+2018-12-14 21:01:40,324 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/servererror]}" onto public java.lang.String com.newdon.controller.LoginController.servererror()
+2018-12-14 21:01:40,324 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/logout]}" onto public java.lang.String com.newdon.controller.LoginController.logout(javax.servlet.http.HttpServletRequest)
+2018-12-14 21:01:40,324 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/login]}" onto public java.lang.String com.newdon.controller.LoginController.login()
+2018-12-14 21:01:40,324 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/getin]}" onto public java.lang.String com.newdon.controller.LoginController.loginIn(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.String,org.springframework.ui.Model)
+2018-12-14 21:01:40,325 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/notfound]}" onto public java.lang.String com.newdon.controller.LoginController.notfound()
+2018-12-14 21:01:40,325 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/page/{page}]}" onto public java.lang.String com.newdon.controller.LoginController.page(java.lang.String)
+2018-12-14 21:01:40,326 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/error]}" onto public java.lang.String com.newdon.controller.MainsiteErrorController.handleError(javax.servlet.http.HttpServletRequest)
+2018-12-14 21:01:40,329 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/contract/add]}" onto public java.lang.String com.newdon.controller.NewdonContractController.add()
+2018-12-14 21:01:40,329 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/contract/update]}" onto public java.lang.String com.newdon.controller.NewdonContractController.update(com.newdon.entity.NewdonContract,org.springframework.ui.Model,java.lang.Integer)
+2018-12-14 21:01:40,330 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/contract/query]}" onto public java.lang.String com.newdon.controller.NewdonContractController.query(com.newdon.entity.NewdonContract,org.springframework.ui.Model,java.lang.Integer)
+2018-12-14 21:01:40,330 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/contract/deleteById]}" onto public java.lang.String com.newdon.controller.NewdonContractController.deleteById(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 21:01:40,331 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/contract/edit]}" onto public java.lang.String com.newdon.controller.NewdonContractController.edit(com.newdon.entity.NewdonContract,org.springframework.ui.Model,java.lang.Integer)
+2018-12-14 21:01:40,331 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/contract/insert],methods=[POST]}" onto public java.lang.String com.newdon.controller.NewdonContractController.addList(com.newdon.entity.NewdonContract,com.newdon.entity.NewdonCustomer,com.newdon.entity.BasicTechInfo,org.springframework.ui.Model)
+2018-12-14 21:01:40,332 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/customer/add]}" onto public java.lang.String com.newdon.controller.NewdonCustomerController.add()
+2018-12-14 21:01:40,333 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/customer/update]}" onto public java.lang.String com.newdon.controller.NewdonCustomerController.update(com.newdon.entity.NewdonCustomer,org.springframework.ui.Model,java.lang.Integer)
+2018-12-14 21:01:40,333 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/customer/query]}" onto public java.lang.String com.newdon.controller.NewdonCustomerController.query(com.newdon.entity.NewdonCustomer,org.springframework.ui.Model,java.lang.Integer)
+2018-12-14 21:01:40,333 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/customer/deleteById]}" onto public java.lang.String com.newdon.controller.NewdonCustomerController.deleteById(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 21:01:40,334 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/customer/edit]}" onto public java.lang.String com.newdon.controller.NewdonCustomerController.edit(com.newdon.entity.NewdonCustomer,org.springframework.ui.Model,java.lang.Integer)
+2018-12-14 21:01:40,334 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/customer/insert],methods=[POST]}" onto public java.lang.String com.newdon.controller.NewdonCustomerController.addList(com.newdon.entity.NewdonCustomer,org.springframework.ui.Model)
+2018-12-14 21:01:40,336 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/admin/newsEdit],methods=[POST]}" onto public java.lang.String com.newdon.controller.NewsController.newsEditPost(org.springframework.ui.Model,com.newdon.model.News,org.springframework.web.multipart.MultipartFile[],javax.servlet.http.HttpSession)
+2018-12-14 21:01:40,336 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/admin/newsEditState],methods=[POST]}" onto public com.newdon.model.ResObject<java.lang.Object> com.newdon.controller.NewsController.newsEditState(com.newdon.model.News)
+2018-12-14 21:01:40,336 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/admin/newsEdit],methods=[GET]}" onto public java.lang.String com.newdon.controller.NewsController.newsEditGet(org.springframework.ui.Model,com.newdon.model.News)
+2018-12-14 21:01:40,337 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/admin/newsManage_{pageCurrent}_{pageSize}_{pageCount}]}" onto public java.lang.String com.newdon.controller.NewsController.newsManage(com.newdon.model.News,java.lang.Integer,java.lang.Integer,java.lang.Integer,org.springframework.ui.Model)
+2018-12-14 21:01:40,380 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-14 21:01:40,380 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-14 21:01:40,384 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2018-12-14 21:01:40,433 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-14 21:01:41,786 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java:431] Registering beans for JMX exposure on startup
+2018-12-14 21:01:41,789 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java:916] Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-12-14 21:01:41,798 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java:671] Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-12-14 21:01:41,830 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:179] Initializing ProtocolHandler ["http-nio-80"]
+2018-12-14 21:01:41,861 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:179] Starting ProtocolHandler ["http-nio-80"]
+2018-12-14 21:01:41,881 INFO [main] o.a.t.u.n.NioSelectorPool [DirectJDKLog.java:179] Using a shared selector for servlet write/read
+2018-12-14 21:01:41,927 INFO [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:201] Tomcat started on port(s): 80 (http)
+2018-12-14 21:01:41,946 INFO [main] c.n.NewdonApplication [StartupInfoLogger.java:57] Started NewdonApplication in 9.709 seconds (JVM running for 15.323)
+2018-12-14 21:03:23,579 INFO [http-nio-80-exec-2] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:179] Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-12-14 21:03:23,579 INFO [http-nio-80-exec-2] o.s.w.s.DispatcherServlet [FrameworkServlet.java:489] FrameworkServlet 'dispatcherServlet': initialization started
+2018-12-14 21:03:23,635 INFO [http-nio-80-exec-2] o.s.w.s.DispatcherServlet [FrameworkServlet.java:508] FrameworkServlet 'dispatcherServlet': initialization completed in 54 ms
+2018-12-14 21:03:23,740 INFO [http-nio-80-exec-1] o.t.TemplateEngine [TemplateEngine.java:825] [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-12-14 21:03:23,797 INFO [http-nio-80-exec-1] o.t.t.AbstractTemplateResolver [AbstractTemplateResolver.java:99] [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2018-12-14 21:03:23,797 INFO [http-nio-80-exec-1] o.t.t.AbstractTemplateResolver [AbstractTemplateResolver.java:110] [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-12-14 21:03:23,798 INFO [http-nio-80-exec-1] o.t.m.AbstractMessageResolver [AbstractMessageResolver.java:72] [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-12-14 21:03:23,798 INFO [http-nio-80-exec-1] o.t.m.AbstractMessageResolver [AbstractMessageResolver.java:78] [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-12-14 21:03:23,803 INFO [http-nio-80-exec-1] o.t.T.CONFIG [ConfigurationPrinterHelper.java:123] [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * XML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * XHTML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-12-14 21:03:23,804 INFO [http-nio-80-exec-1] o.t.TemplateEngine [TemplateEngine.java:838] [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2018-12-14 21:16:32,024 ERROR [http-nio-80-exec-3] o.t.t.ErrorHandler [ErrorHandler.java:57] [THYMELEAF][http-nio-80-exec-3] Fatal error during parsing
+org.xml.sax.SAXParseException: 对实体 "customerName" 的引用必须以 ';' 分隔符结尾。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1472)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.scanAttributeValue(XMLScanner.java:913)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanAttribute(XMLDocumentFragmentScannerImpl.java:1548)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1315)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:327)
+	at org.thymeleaf.templateparser.xmlsax.AbstractNonValidatingSAXTemplateParser.doParse(AbstractNonValidatingSAXTemplateParser.java:209)
+	at org.thymeleaf.templateparser.xmlsax.AbstractNonValidatingSAXTemplateParser.parseTemplateUsingPool(AbstractNonValidatingSAXTemplateParser.java:134)
+	at org.thymeleaf.templateparser.xmlsax.AbstractNonValidatingSAXTemplateParser.parseTemplate(AbstractNonValidatingSAXTemplateParser.java:116)
+	at org.thymeleaf.TemplateRepository.getTemplate(TemplateRepository.java:278)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1104)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1060)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1011)
+	at org.thymeleaf.spring4.view.ThymeleafView.renderFragment(ThymeleafView.java:335)
+	at org.thymeleaf.spring4.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2018-12-14 21:16:32,032 ERROR [http-nio-80-exec-3] o.t.TemplateEngine [TemplateEngine.java:1085] [THYMELEAF][http-nio-80-exec-3] Exception processing template "contract/contractList": Exception parsing document: template="contract/contractList", line 193 - column 94
+2018-12-14 21:16:32,045 ERROR [http-nio-80-exec-3] o.a.c.c.C.[.[.[.[dispatcherServlet] [DirectJDKLog.java:181] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Exception parsing document: template="contract/contractList", line 193 - column 94] with root cause
+org.xml.sax.SAXParseException: 对实体 "customerName" 的引用必须以 ';' 分隔符结尾。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1472)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.scanAttributeValue(XMLScanner.java:913)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanAttribute(XMLDocumentFragmentScannerImpl.java:1548)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1315)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:327)
+	at org.thymeleaf.templateparser.xmlsax.AbstractNonValidatingSAXTemplateParser.doParse(AbstractNonValidatingSAXTemplateParser.java:209)
+	at org.thymeleaf.templateparser.xmlsax.AbstractNonValidatingSAXTemplateParser.parseTemplateUsingPool(AbstractNonValidatingSAXTemplateParser.java:134)
+	at org.thymeleaf.templateparser.xmlsax.AbstractNonValidatingSAXTemplateParser.parseTemplate(AbstractNonValidatingSAXTemplateParser.java:116)
+	at org.thymeleaf.TemplateRepository.getTemplate(TemplateRepository.java:278)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1104)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1060)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1011)
+	at org.thymeleaf.spring4.view.ThymeleafView.renderFragment(ThymeleafView.java:335)
+	at org.thymeleaf.spring4.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2018-12-14 21:21:32,009 INFO [main] c.n.NewdonApplication [StartupInfoLogger.java:48] Starting NewdonApplication on Rlserim-TF with PID 5780 (D:\BaiduYunDownload\newdon\newdon-contract-manage\target\classes started by Rlserim in D:\BaiduYunDownload\newdon\newdon-contract-manage)
+2018-12-14 21:21:32,013 INFO [main] c.n.NewdonApplication [SpringApplication.java:593] No active profile set, falling back to default profiles: default
+2018-12-14 21:21:32,335 INFO [background-preinit] o.h.v.i.u.Version [Version.java:30] HV000001: Hibernate Validator 5.3.5.Final
+2018-12-14 21:21:32,373 INFO [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java:583] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@45fd9a4d: startup date [Fri Dec 14 21:21:32 CST 2018]; root of context hierarchy
+2018-12-14 21:21:33,646 INFO [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:89] Tomcat initialized with port(s): 80 (http)
+2018-12-14 21:21:33,654 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:179] Starting service [Tomcat]
+2018-12-14 21:21:33,655 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:179] Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-12-14 21:21:33,772 INFO [localhost-startStop-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:179] Initializing Spring embedded WebApplicationContext
+2018-12-14 21:21:33,772 INFO [localhost-startStop-1] o.s.w.c.ContextLoader [EmbeddedWebApplicationContext.java:276] Root WebApplicationContext: initialization completed in 1399 ms
+2018-12-14 21:21:33,993 INFO [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean [ServletRegistrationBean.java:190] Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-14 21:21:33,997 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-14 21:21:33,998 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-14 21:21:33,998 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-14 21:21:33,998 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-14 21:21:34,298 INFO [main] c.a.d.p.DruidDataSource [DruidDataSource.java:721] {dataSource-1} inited
+2018-12-14 21:21:35,394 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter [RequestMappingHandlerAdapter.java:534] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@45fd9a4d: startup date [Fri Dec 14 21:21:32 CST 2018]; root of context hierarchy
+2018-12-14 21:21:35,446 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/basic/add]}" onto public java.lang.String com.newdon.controller.BasicTechInfoController.add()
+2018-12-14 21:21:35,448 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/basic/update]}" onto public java.lang.String com.newdon.controller.BasicTechInfoController.update(com.newdon.entity.BasicTechInfo,org.springframework.ui.Model,java.lang.Integer)
+2018-12-14 21:21:35,449 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/basic/query]}" onto public java.lang.String com.newdon.controller.BasicTechInfoController.query(com.newdon.entity.BasicTechInfo,org.springframework.ui.Model,java.lang.Integer,int)
+2018-12-14 21:21:35,449 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/basic/insert],methods=[POST]}" onto public java.lang.String com.newdon.controller.BasicTechInfoController.addList(com.newdon.entity.BasicTechInfo,org.springframework.ui.Model)
+2018-12-14 21:21:35,449 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/basic/deleteById]}" onto public java.lang.String com.newdon.controller.BasicTechInfoController.deleteById(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 21:21:35,450 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/basic/edit]}" onto public java.lang.String com.newdon.controller.BasicTechInfoController.edit(com.newdon.entity.BasicTechInfo,org.springframework.ui.Model,java.lang.Integer)
+2018-12-14 21:21:35,450 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/getin]}" onto public java.lang.String com.newdon.controller.LoginController.loginIn(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.String,org.springframework.ui.Model)
+2018-12-14 21:21:35,451 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/notfound]}" onto public java.lang.String com.newdon.controller.LoginController.notfound()
+2018-12-14 21:21:35,451 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/servererror]}" onto public java.lang.String com.newdon.controller.LoginController.servererror()
+2018-12-14 21:21:35,451 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/login]}" onto public java.lang.String com.newdon.controller.LoginController.login()
+2018-12-14 21:21:35,451 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/logout]}" onto public java.lang.String com.newdon.controller.LoginController.logout(javax.servlet.http.HttpServletRequest)
+2018-12-14 21:21:35,451 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/page/{page}]}" onto public java.lang.String com.newdon.controller.LoginController.page(java.lang.String)
+2018-12-14 21:21:35,452 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/error]}" onto public java.lang.String com.newdon.controller.MainsiteErrorController.handleError(javax.servlet.http.HttpServletRequest)
+2018-12-14 21:21:35,454 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/contract/add]}" onto public java.lang.String com.newdon.controller.NewdonContractController.add()
+2018-12-14 21:21:35,454 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/contract/update]}" onto public java.lang.String com.newdon.controller.NewdonContractController.update(com.newdon.entity.NewdonContract,org.springframework.ui.Model,java.lang.Integer)
+2018-12-14 21:21:35,454 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/contract/query]}" onto public java.lang.String com.newdon.controller.NewdonContractController.query(com.newdon.entity.NewdonContract,org.springframework.ui.Model,java.lang.Integer,int)
+2018-12-14 21:21:35,455 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/contract/insert],methods=[POST]}" onto public java.lang.String com.newdon.controller.NewdonContractController.addList(com.newdon.entity.NewdonContract,com.newdon.entity.NewdonCustomer,com.newdon.entity.BasicTechInfo,org.springframework.ui.Model)
+2018-12-14 21:21:35,455 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/contract/deleteById]}" onto public java.lang.String com.newdon.controller.NewdonContractController.deleteById(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 21:21:35,455 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/contract/edit]}" onto public java.lang.String com.newdon.controller.NewdonContractController.edit(com.newdon.entity.NewdonContract,org.springframework.ui.Model,java.lang.Integer)
+2018-12-14 21:21:35,456 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/customer/add]}" onto public java.lang.String com.newdon.controller.NewdonCustomerController.add()
+2018-12-14 21:21:35,457 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/customer/update]}" onto public java.lang.String com.newdon.controller.NewdonCustomerController.update(com.newdon.entity.NewdonCustomer,org.springframework.ui.Model,java.lang.Integer)
+2018-12-14 21:21:35,457 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/customer/query]}" onto public java.lang.String com.newdon.controller.NewdonCustomerController.query(com.newdon.entity.NewdonCustomer,org.springframework.ui.Model,java.lang.Integer,int)
+2018-12-14 21:21:35,457 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/customer/insert],methods=[POST]}" onto public java.lang.String com.newdon.controller.NewdonCustomerController.addList(com.newdon.entity.NewdonCustomer,org.springframework.ui.Model)
+2018-12-14 21:21:35,457 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/customer/deleteById]}" onto public java.lang.String com.newdon.controller.NewdonCustomerController.deleteById(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 21:21:35,458 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/customer/edit]}" onto public java.lang.String com.newdon.controller.NewdonCustomerController.edit(com.newdon.entity.NewdonCustomer,org.springframework.ui.Model,java.lang.Integer)
+2018-12-14 21:21:35,459 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/admin/newsEdit],methods=[POST]}" onto public java.lang.String com.newdon.controller.NewsController.newsEditPost(org.springframework.ui.Model,com.newdon.model.News,org.springframework.web.multipart.MultipartFile[],javax.servlet.http.HttpSession)
+2018-12-14 21:21:35,459 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/admin/newsEdit],methods=[GET]}" onto public java.lang.String com.newdon.controller.NewsController.newsEditGet(org.springframework.ui.Model,com.newdon.model.News)
+2018-12-14 21:21:35,460 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/admin/newsManage_{pageCurrent}_{pageSize}_{pageCount}]}" onto public java.lang.String com.newdon.controller.NewsController.newsManage(com.newdon.model.News,java.lang.Integer,java.lang.Integer,java.lang.Integer,org.springframework.ui.Model)
+2018-12-14 21:21:35,460 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/admin/newsEditState],methods=[POST]}" onto public com.newdon.model.ResObject<java.lang.Object> com.newdon.controller.NewsController.newsEditState(com.newdon.model.News)
+2018-12-14 21:21:35,488 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-14 21:21:35,488 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-14 21:21:35,491 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2018-12-14 21:21:35,525 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-14 21:21:36,081 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java:431] Registering beans for JMX exposure on startup
+2018-12-14 21:21:36,086 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java:916] Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-12-14 21:21:36,093 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java:671] Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-12-14 21:21:36,105 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:179] Initializing ProtocolHandler ["http-nio-80"]
+2018-12-14 21:21:36,124 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:179] Starting ProtocolHandler ["http-nio-80"]
+2018-12-14 21:21:36,142 INFO [main] o.a.t.u.n.NioSelectorPool [DirectJDKLog.java:179] Using a shared selector for servlet write/read
+2018-12-14 21:21:36,162 INFO [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:201] Tomcat started on port(s): 80 (http)
+2018-12-14 21:21:36,166 INFO [main] c.n.NewdonApplication [StartupInfoLogger.java:57] Started NewdonApplication in 4.68 seconds (JVM running for 7.123)
+2018-12-14 21:21:41,695 INFO [http-nio-80-exec-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:179] Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-12-14 21:21:41,695 INFO [http-nio-80-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:489] FrameworkServlet 'dispatcherServlet': initialization started
+2018-12-14 21:21:41,735 INFO [http-nio-80-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:508] FrameworkServlet 'dispatcherServlet': initialization completed in 40 ms
+2018-12-14 21:21:41,792 INFO [http-nio-80-exec-2] o.t.TemplateEngine [TemplateEngine.java:825] [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-12-14 21:21:41,822 INFO [http-nio-80-exec-2] o.t.t.AbstractTemplateResolver [AbstractTemplateResolver.java:99] [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2018-12-14 21:21:41,822 INFO [http-nio-80-exec-2] o.t.t.AbstractTemplateResolver [AbstractTemplateResolver.java:110] [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-12-14 21:21:41,822 INFO [http-nio-80-exec-2] o.t.m.AbstractMessageResolver [AbstractMessageResolver.java:72] [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-12-14 21:21:41,822 INFO [http-nio-80-exec-2] o.t.m.AbstractMessageResolver [AbstractMessageResolver.java:78] [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-12-14 21:21:41,825 INFO [http-nio-80-exec-2] o.t.T.CONFIG [ConfigurationPrinterHelper.java:123] [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * XML
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-12-14 21:21:41,825 INFO [http-nio-80-exec-2] o.t.TemplateEngine [TemplateEngine.java:838] [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2018-12-14 21:21:43,564 ERROR [http-nio-80-exec-3] o.a.c.c.C.[.[.[.[dispatcherServlet] [DirectJDKLog.java:181] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Optional int parameter 'tag' is present but cannot be translated into a null value due to being declared as a primitive type. Consider declaring it as object wrapper for the corresponding primitive type.] with root cause
+java.lang.IllegalStateException: Optional int parameter 'tag' is present but cannot be translated into a null value due to being declared as a primitive type. Consider declaring it as object wrapper for the corresponding primitive type.
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.handleNullValue(AbstractNamedValueMethodArgumentResolver.java:238)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:111)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:158)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:128)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2018-12-14 21:22:32,418 INFO [main] c.n.NewdonApplication [StartupInfoLogger.java:48] Starting NewdonApplication on Rlserim-TF with PID 18776 (D:\BaiduYunDownload\newdon\newdon-contract-manage\target\classes started by Rlserim in D:\BaiduYunDownload\newdon\newdon-contract-manage)
+2018-12-14 21:22:32,421 INFO [main] c.n.NewdonApplication [SpringApplication.java:593] No active profile set, falling back to default profiles: default
+2018-12-14 21:22:32,598 INFO [background-preinit] o.h.v.i.u.Version [Version.java:30] HV000001: Hibernate Validator 5.3.5.Final
+2018-12-14 21:22:32,638 INFO [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java:583] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@45fd9a4d: startup date [Fri Dec 14 21:22:32 CST 2018]; root of context hierarchy
+2018-12-14 21:22:33,920 INFO [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:89] Tomcat initialized with port(s): 80 (http)
+2018-12-14 21:22:33,929 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:179] Starting service [Tomcat]
+2018-12-14 21:22:33,930 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:179] Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-12-14 21:22:34,043 INFO [localhost-startStop-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:179] Initializing Spring embedded WebApplicationContext
+2018-12-14 21:22:34,044 INFO [localhost-startStop-1] o.s.w.c.ContextLoader [EmbeddedWebApplicationContext.java:276] Root WebApplicationContext: initialization completed in 1406 ms
+2018-12-14 21:22:34,268 INFO [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean [ServletRegistrationBean.java:190] Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-14 21:22:34,272 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-14 21:22:34,273 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-14 21:22:34,273 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-14 21:22:34,273 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-14 21:22:34,575 INFO [main] c.a.d.p.DruidDataSource [DruidDataSource.java:721] {dataSource-1} inited
+2018-12-14 21:22:35,677 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter [RequestMappingHandlerAdapter.java:534] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@45fd9a4d: startup date [Fri Dec 14 21:22:32 CST 2018]; root of context hierarchy
+2018-12-14 21:22:35,731 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/basic/add]}" onto public java.lang.String com.newdon.controller.BasicTechInfoController.add()
+2018-12-14 21:22:35,734 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/basic/update]}" onto public java.lang.String com.newdon.controller.BasicTechInfoController.update(com.newdon.entity.BasicTechInfo,org.springframework.ui.Model,java.lang.Integer)
+2018-12-14 21:22:35,735 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/basic/query]}" onto public java.lang.String com.newdon.controller.BasicTechInfoController.query(com.newdon.entity.BasicTechInfo,org.springframework.ui.Model,java.lang.Integer,java.lang.Integer)
+2018-12-14 21:22:35,735 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/basic/insert],methods=[POST]}" onto public java.lang.String com.newdon.controller.BasicTechInfoController.addList(com.newdon.entity.BasicTechInfo,org.springframework.ui.Model)
+2018-12-14 21:22:35,735 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/basic/edit]}" onto public java.lang.String com.newdon.controller.BasicTechInfoController.edit(com.newdon.entity.BasicTechInfo,org.springframework.ui.Model,java.lang.Integer)
+2018-12-14 21:22:35,736 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/basic/deleteById]}" onto public java.lang.String com.newdon.controller.BasicTechInfoController.deleteById(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 21:22:35,736 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/getin]}" onto public java.lang.String com.newdon.controller.LoginController.loginIn(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.String,org.springframework.ui.Model)
+2018-12-14 21:22:35,737 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/login]}" onto public java.lang.String com.newdon.controller.LoginController.login()
+2018-12-14 21:22:35,737 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/page/{page}]}" onto public java.lang.String com.newdon.controller.LoginController.page(java.lang.String)
+2018-12-14 21:22:35,737 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/logout]}" onto public java.lang.String com.newdon.controller.LoginController.logout(javax.servlet.http.HttpServletRequest)
+2018-12-14 21:22:35,737 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/notfound]}" onto public java.lang.String com.newdon.controller.LoginController.notfound()
+2018-12-14 21:22:35,738 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/servererror]}" onto public java.lang.String com.newdon.controller.LoginController.servererror()
+2018-12-14 21:22:35,738 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/error]}" onto public java.lang.String com.newdon.controller.MainsiteErrorController.handleError(javax.servlet.http.HttpServletRequest)
+2018-12-14 21:22:35,740 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/contract/add]}" onto public java.lang.String com.newdon.controller.NewdonContractController.add()
+2018-12-14 21:22:35,740 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/contract/update]}" onto public java.lang.String com.newdon.controller.NewdonContractController.update(com.newdon.entity.NewdonContract,org.springframework.ui.Model,java.lang.Integer)
+2018-12-14 21:22:35,741 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/contract/query]}" onto public java.lang.String com.newdon.controller.NewdonContractController.query(com.newdon.entity.NewdonContract,org.springframework.ui.Model,java.lang.Integer,java.lang.Integer)
+2018-12-14 21:22:35,741 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/contract/insert],methods=[POST]}" onto public java.lang.String com.newdon.controller.NewdonContractController.addList(com.newdon.entity.NewdonContract,com.newdon.entity.NewdonCustomer,com.newdon.entity.BasicTechInfo,org.springframework.ui.Model)
+2018-12-14 21:22:35,741 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/contract/edit]}" onto public java.lang.String com.newdon.controller.NewdonContractController.edit(com.newdon.entity.NewdonContract,org.springframework.ui.Model,java.lang.Integer)
+2018-12-14 21:22:35,741 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/contract/deleteById]}" onto public java.lang.String com.newdon.controller.NewdonContractController.deleteById(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 21:22:35,742 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/customer/add]}" onto public java.lang.String com.newdon.controller.NewdonCustomerController.add()
+2018-12-14 21:22:35,743 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/customer/update]}" onto public java.lang.String com.newdon.controller.NewdonCustomerController.update(com.newdon.entity.NewdonCustomer,org.springframework.ui.Model,java.lang.Integer)
+2018-12-14 21:22:35,743 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/customer/query]}" onto public java.lang.String com.newdon.controller.NewdonCustomerController.query(com.newdon.entity.NewdonCustomer,org.springframework.ui.Model,java.lang.Integer,java.lang.Integer)
+2018-12-14 21:22:35,743 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/customer/insert],methods=[POST]}" onto public java.lang.String com.newdon.controller.NewdonCustomerController.addList(com.newdon.entity.NewdonCustomer,org.springframework.ui.Model)
+2018-12-14 21:22:35,743 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/customer/edit]}" onto public java.lang.String com.newdon.controller.NewdonCustomerController.edit(com.newdon.entity.NewdonCustomer,org.springframework.ui.Model,java.lang.Integer)
+2018-12-14 21:22:35,744 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/customer/deleteById]}" onto public java.lang.String com.newdon.controller.NewdonCustomerController.deleteById(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 21:22:35,745 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/admin/newsEdit],methods=[GET]}" onto public java.lang.String com.newdon.controller.NewsController.newsEditGet(org.springframework.ui.Model,com.newdon.model.News)
+2018-12-14 21:22:35,745 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/admin/newsEdit],methods=[POST]}" onto public java.lang.String com.newdon.controller.NewsController.newsEditPost(org.springframework.ui.Model,com.newdon.model.News,org.springframework.web.multipart.MultipartFile[],javax.servlet.http.HttpSession)
+2018-12-14 21:22:35,746 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/admin/newsEditState],methods=[POST]}" onto public com.newdon.model.ResObject<java.lang.Object> com.newdon.controller.NewsController.newsEditState(com.newdon.model.News)
+2018-12-14 21:22:35,746 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/admin/newsManage_{pageCurrent}_{pageSize}_{pageCount}]}" onto public java.lang.String com.newdon.controller.NewsController.newsManage(com.newdon.model.News,java.lang.Integer,java.lang.Integer,java.lang.Integer,org.springframework.ui.Model)
+2018-12-14 21:22:35,784 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-14 21:22:35,785 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-14 21:22:35,788 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2018-12-14 21:22:35,826 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-14 21:22:36,371 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java:431] Registering beans for JMX exposure on startup
+2018-12-14 21:22:36,372 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java:916] Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-12-14 21:22:36,377 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java:671] Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-12-14 21:22:36,388 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:179] Initializing ProtocolHandler ["http-nio-80"]
+2018-12-14 21:22:36,398 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:179] Starting ProtocolHandler ["http-nio-80"]
+2018-12-14 21:22:36,410 INFO [main] o.a.t.u.n.NioSelectorPool [DirectJDKLog.java:179] Using a shared selector for servlet write/read
+2018-12-14 21:22:36,429 INFO [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:201] Tomcat started on port(s): 80 (http)
+2018-12-14 21:22:36,433 INFO [main] c.n.NewdonApplication [StartupInfoLogger.java:57] Started NewdonApplication in 4.372 seconds (JVM running for 6.098)
+2018-12-14 21:22:36,623 INFO [http-nio-80-exec-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:179] Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-12-14 21:22:36,624 INFO [http-nio-80-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:489] FrameworkServlet 'dispatcherServlet': initialization started
+2018-12-14 21:22:36,665 INFO [http-nio-80-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:508] FrameworkServlet 'dispatcherServlet': initialization completed in 41 ms
+2018-12-14 21:22:36,719 INFO [http-nio-80-exec-2] o.t.TemplateEngine [TemplateEngine.java:825] [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-12-14 21:22:36,765 INFO [http-nio-80-exec-2] o.t.t.AbstractTemplateResolver [AbstractTemplateResolver.java:99] [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2018-12-14 21:22:36,765 INFO [http-nio-80-exec-2] o.t.t.AbstractTemplateResolver [AbstractTemplateResolver.java:110] [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-12-14 21:22:36,765 INFO [http-nio-80-exec-2] o.t.m.AbstractMessageResolver [AbstractMessageResolver.java:72] [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-12-14 21:22:36,766 INFO [http-nio-80-exec-2] o.t.m.AbstractMessageResolver [AbstractMessageResolver.java:78] [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-12-14 21:22:36,768 INFO [http-nio-80-exec-2] o.t.T.CONFIG [ConfigurationPrinterHelper.java:123] [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * XML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-12-14 21:22:36,769 INFO [http-nio-80-exec-2] o.t.TemplateEngine [TemplateEngine.java:838] [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2018-12-14 21:24:41,622 INFO [main] c.n.NewdonApplication [StartupInfoLogger.java:48] Starting NewdonApplication on Rlserim-TF with PID 18104 (D:\BaiduYunDownload\newdon\newdon-contract-manage\target\classes started by Rlserim in D:\BaiduYunDownload\newdon\newdon-contract-manage)
+2018-12-14 21:24:41,625 INFO [main] c.n.NewdonApplication [SpringApplication.java:593] No active profile set, falling back to default profiles: default
+2018-12-14 21:24:41,808 INFO [background-preinit] o.h.v.i.u.Version [Version.java:30] HV000001: Hibernate Validator 5.3.5.Final
+2018-12-14 21:24:41,838 INFO [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java:583] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@31bcf236: startup date [Fri Dec 14 21:24:41 CST 2018]; root of context hierarchy
+2018-12-14 21:24:43,162 INFO [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:89] Tomcat initialized with port(s): 80 (http)
+2018-12-14 21:24:43,169 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:179] Starting service [Tomcat]
+2018-12-14 21:24:43,170 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:179] Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-12-14 21:24:43,289 INFO [localhost-startStop-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:179] Initializing Spring embedded WebApplicationContext
+2018-12-14 21:24:43,289 INFO [localhost-startStop-1] o.s.w.c.ContextLoader [EmbeddedWebApplicationContext.java:276] Root WebApplicationContext: initialization completed in 1451 ms
+2018-12-14 21:24:43,575 INFO [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean [ServletRegistrationBean.java:190] Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-14 21:24:43,579 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-14 21:24:43,580 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-14 21:24:43,580 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-14 21:24:43,581 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-14 21:24:43,884 INFO [main] c.a.d.p.DruidDataSource [DruidDataSource.java:721] {dataSource-1} inited
+2018-12-14 21:24:44,980 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter [RequestMappingHandlerAdapter.java:534] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@31bcf236: startup date [Fri Dec 14 21:24:41 CST 2018]; root of context hierarchy
+2018-12-14 21:24:45,031 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/basic/add]}" onto public java.lang.String com.newdon.controller.BasicTechInfoController.add()
+2018-12-14 21:24:45,033 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/basic/update]}" onto public java.lang.String com.newdon.controller.BasicTechInfoController.update(com.newdon.entity.BasicTechInfo,org.springframework.ui.Model,java.lang.Integer)
+2018-12-14 21:24:45,033 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/basic/query]}" onto public java.lang.String com.newdon.controller.BasicTechInfoController.query(com.newdon.entity.BasicTechInfo,org.springframework.ui.Model,java.lang.Integer,java.lang.Integer)
+2018-12-14 21:24:45,034 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/basic/edit]}" onto public java.lang.String com.newdon.controller.BasicTechInfoController.edit(com.newdon.entity.BasicTechInfo,org.springframework.ui.Model,java.lang.Integer)
+2018-12-14 21:24:45,034 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/basic/deleteById]}" onto public java.lang.String com.newdon.controller.BasicTechInfoController.deleteById(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 21:24:45,034 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/basic/insert],methods=[POST]}" onto public java.lang.String com.newdon.controller.BasicTechInfoController.addList(com.newdon.entity.BasicTechInfo,org.springframework.ui.Model)
+2018-12-14 21:24:45,035 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/page/{page}]}" onto public java.lang.String com.newdon.controller.LoginController.page(java.lang.String)
+2018-12-14 21:24:45,035 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/login]}" onto public java.lang.String com.newdon.controller.LoginController.login()
+2018-12-14 21:24:45,035 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/logout]}" onto public java.lang.String com.newdon.controller.LoginController.logout(javax.servlet.http.HttpServletRequest)
+2018-12-14 21:24:45,036 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/notfound]}" onto public java.lang.String com.newdon.controller.LoginController.notfound()
+2018-12-14 21:24:45,036 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/servererror]}" onto public java.lang.String com.newdon.controller.LoginController.servererror()
+2018-12-14 21:24:45,036 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/getin]}" onto public java.lang.String com.newdon.controller.LoginController.loginIn(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.String,org.springframework.ui.Model)
+2018-12-14 21:24:45,036 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/error]}" onto public java.lang.String com.newdon.controller.MainsiteErrorController.handleError(javax.servlet.http.HttpServletRequest)
+2018-12-14 21:24:45,038 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/contract/add]}" onto public java.lang.String com.newdon.controller.NewdonContractController.add()
+2018-12-14 21:24:45,039 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/contract/update]}" onto public java.lang.String com.newdon.controller.NewdonContractController.update(com.newdon.entity.NewdonContract,org.springframework.ui.Model,java.lang.Integer)
+2018-12-14 21:24:45,039 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/contract/query]}" onto public java.lang.String com.newdon.controller.NewdonContractController.query(com.newdon.entity.NewdonContract,org.springframework.ui.Model,java.lang.Integer,java.lang.Integer)
+2018-12-14 21:24:45,039 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/contract/edit]}" onto public java.lang.String com.newdon.controller.NewdonContractController.edit(com.newdon.entity.NewdonContract,org.springframework.ui.Model,java.lang.Integer)
+2018-12-14 21:24:45,039 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/contract/deleteById]}" onto public java.lang.String com.newdon.controller.NewdonContractController.deleteById(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 21:24:45,040 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/contract/insert],methods=[POST]}" onto public java.lang.String com.newdon.controller.NewdonContractController.addList(com.newdon.entity.NewdonContract,com.newdon.entity.NewdonCustomer,com.newdon.entity.BasicTechInfo,org.springframework.ui.Model)
+2018-12-14 21:24:45,041 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/customer/add]}" onto public java.lang.String com.newdon.controller.NewdonCustomerController.add()
+2018-12-14 21:24:45,041 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/customer/update]}" onto public java.lang.String com.newdon.controller.NewdonCustomerController.update(com.newdon.entity.NewdonCustomer,org.springframework.ui.Model,java.lang.Integer)
+2018-12-14 21:24:45,041 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/customer/query]}" onto public java.lang.String com.newdon.controller.NewdonCustomerController.query(com.newdon.entity.NewdonCustomer,org.springframework.ui.Model,java.lang.Integer,java.lang.Integer)
+2018-12-14 21:24:45,041 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/customer/edit]}" onto public java.lang.String com.newdon.controller.NewdonCustomerController.edit(com.newdon.entity.NewdonCustomer,org.springframework.ui.Model,java.lang.Integer)
+2018-12-14 21:24:45,042 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/customer/deleteById]}" onto public java.lang.String com.newdon.controller.NewdonCustomerController.deleteById(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 21:24:45,042 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/customer/insert],methods=[POST]}" onto public java.lang.String com.newdon.controller.NewdonCustomerController.addList(com.newdon.entity.NewdonCustomer,org.springframework.ui.Model)
+2018-12-14 21:24:45,043 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/admin/newsEdit],methods=[POST]}" onto public java.lang.String com.newdon.controller.NewsController.newsEditPost(org.springframework.ui.Model,com.newdon.model.News,org.springframework.web.multipart.MultipartFile[],javax.servlet.http.HttpSession)
+2018-12-14 21:24:45,043 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/admin/newsManage_{pageCurrent}_{pageSize}_{pageCount}]}" onto public java.lang.String com.newdon.controller.NewsController.newsManage(com.newdon.model.News,java.lang.Integer,java.lang.Integer,java.lang.Integer,org.springframework.ui.Model)
+2018-12-14 21:24:45,044 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/admin/newsEditState],methods=[POST]}" onto public com.newdon.model.ResObject<java.lang.Object> com.newdon.controller.NewsController.newsEditState(com.newdon.model.News)
+2018-12-14 21:24:45,044 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/admin/newsEdit],methods=[GET]}" onto public java.lang.String com.newdon.controller.NewsController.newsEditGet(org.springframework.ui.Model,com.newdon.model.News)
+2018-12-14 21:24:45,071 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-14 21:24:45,071 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-14 21:24:45,074 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2018-12-14 21:24:45,108 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-14 21:24:45,656 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java:431] Registering beans for JMX exposure on startup
+2018-12-14 21:24:45,658 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java:916] Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-12-14 21:24:45,663 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java:671] Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-12-14 21:24:45,676 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:179] Initializing ProtocolHandler ["http-nio-80"]
+2018-12-14 21:24:45,687 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:179] Starting ProtocolHandler ["http-nio-80"]
+2018-12-14 21:24:45,702 INFO [main] o.a.t.u.n.NioSelectorPool [DirectJDKLog.java:179] Using a shared selector for servlet write/read
+2018-12-14 21:24:45,724 INFO [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:201] Tomcat started on port(s): 80 (http)
+2018-12-14 21:24:45,728 INFO [main] c.n.NewdonApplication [StartupInfoLogger.java:57] Started NewdonApplication in 4.501 seconds (JVM running for 6.444)
+2018-12-14 21:24:49,716 INFO [http-nio-80-exec-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:179] Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-12-14 21:24:49,717 INFO [http-nio-80-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:489] FrameworkServlet 'dispatcherServlet': initialization started
+2018-12-14 21:24:49,757 INFO [http-nio-80-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:508] FrameworkServlet 'dispatcherServlet': initialization completed in 40 ms
+2018-12-14 21:24:49,827 INFO [http-nio-80-exec-3] o.t.TemplateEngine [TemplateEngine.java:825] [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-12-14 21:24:49,857 INFO [http-nio-80-exec-3] o.t.t.AbstractTemplateResolver [AbstractTemplateResolver.java:99] [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2018-12-14 21:24:49,857 INFO [http-nio-80-exec-3] o.t.t.AbstractTemplateResolver [AbstractTemplateResolver.java:110] [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-12-14 21:24:49,857 INFO [http-nio-80-exec-3] o.t.m.AbstractMessageResolver [AbstractMessageResolver.java:72] [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-12-14 21:24:49,858 INFO [http-nio-80-exec-3] o.t.m.AbstractMessageResolver [AbstractMessageResolver.java:78] [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-12-14 21:24:49,860 INFO [http-nio-80-exec-3] o.t.T.CONFIG [ConfigurationPrinterHelper.java:123] [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * XML
+[THYMELEAF]     * HTML5
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-12-14 21:24:49,861 INFO [http-nio-80-exec-3] o.t.TemplateEngine [TemplateEngine.java:838] [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2018-12-14 21:25:02,705 ERROR [http-nio-80-exec-7] o.a.c.c.C.[.[.[.[dispatcherServlet] [DirectJDKLog.java:181] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.newdon.controller.NewdonContractController.query(NewdonContractController.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2018-12-14 21:33:00,216 INFO [main] c.n.NewdonApplication [StartupInfoLogger.java:48] Starting NewdonApplication on Rlserim-TF with PID 14128 (D:\BaiduYunDownload\newdon\newdon-contract-manage\target\classes started by Rlserim in D:\BaiduYunDownload\newdon\newdon-contract-manage)
+2018-12-14 21:33:00,220 INFO [main] c.n.NewdonApplication [SpringApplication.java:593] No active profile set, falling back to default profiles: default
+2018-12-14 21:33:00,389 INFO [background-preinit] o.h.v.i.u.Version [Version.java:30] HV000001: Hibernate Validator 5.3.5.Final
+2018-12-14 21:33:00,434 INFO [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java:583] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2b4c1d96: startup date [Fri Dec 14 21:33:00 CST 2018]; root of context hierarchy
+2018-12-14 21:33:01,680 INFO [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:89] Tomcat initialized with port(s): 80 (http)
+2018-12-14 21:33:01,688 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:179] Starting service [Tomcat]
+2018-12-14 21:33:01,689 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:179] Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-12-14 21:33:01,806 INFO [localhost-startStop-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:179] Initializing Spring embedded WebApplicationContext
+2018-12-14 21:33:01,806 INFO [localhost-startStop-1] o.s.w.c.ContextLoader [EmbeddedWebApplicationContext.java:276] Root WebApplicationContext: initialization completed in 1372 ms
+2018-12-14 21:33:02,029 INFO [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean [ServletRegistrationBean.java:190] Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-14 21:33:02,033 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-14 21:33:02,034 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-14 21:33:02,034 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-14 21:33:02,034 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-14 21:33:02,342 INFO [main] c.a.d.p.DruidDataSource [DruidDataSource.java:721] {dataSource-1} inited
+2018-12-14 21:33:03,455 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter [RequestMappingHandlerAdapter.java:534] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2b4c1d96: startup date [Fri Dec 14 21:33:00 CST 2018]; root of context hierarchy
+2018-12-14 21:33:03,515 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/basic/add]}" onto public java.lang.String com.newdon.controller.BasicTechInfoController.add()
+2018-12-14 21:33:03,517 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/basic/update]}" onto public java.lang.String com.newdon.controller.BasicTechInfoController.update(com.newdon.entity.BasicTechInfo,org.springframework.ui.Model,java.lang.Integer)
+2018-12-14 21:33:03,517 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/basic/query]}" onto public java.lang.String com.newdon.controller.BasicTechInfoController.query(com.newdon.entity.BasicTechInfo,org.springframework.ui.Model,java.lang.Integer,java.lang.Integer)
+2018-12-14 21:33:03,518 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/basic/deleteById]}" onto public java.lang.String com.newdon.controller.BasicTechInfoController.deleteById(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 21:33:03,518 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/basic/insert],methods=[POST]}" onto public java.lang.String com.newdon.controller.BasicTechInfoController.addList(com.newdon.entity.BasicTechInfo,org.springframework.ui.Model)
+2018-12-14 21:33:03,518 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/basic/edit]}" onto public java.lang.String com.newdon.controller.BasicTechInfoController.edit(com.newdon.entity.BasicTechInfo,org.springframework.ui.Model,java.lang.Integer)
+2018-12-14 21:33:03,519 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/page/{page}]}" onto public java.lang.String com.newdon.controller.LoginController.page(java.lang.String)
+2018-12-14 21:33:03,519 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/login]}" onto public java.lang.String com.newdon.controller.LoginController.login()
+2018-12-14 21:33:03,519 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/servererror]}" onto public java.lang.String com.newdon.controller.LoginController.servererror()
+2018-12-14 21:33:03,520 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/getin]}" onto public java.lang.String com.newdon.controller.LoginController.loginIn(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.String,org.springframework.ui.Model)
+2018-12-14 21:33:03,520 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/logout]}" onto public java.lang.String com.newdon.controller.LoginController.logout(javax.servlet.http.HttpServletRequest)
+2018-12-14 21:33:03,520 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/notfound]}" onto public java.lang.String com.newdon.controller.LoginController.notfound()
+2018-12-14 21:33:03,520 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/error]}" onto public java.lang.String com.newdon.controller.MainsiteErrorController.handleError(javax.servlet.http.HttpServletRequest)
+2018-12-14 21:33:03,522 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/contract/add]}" onto public java.lang.String com.newdon.controller.NewdonContractController.add()
+2018-12-14 21:33:03,523 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/contract/update]}" onto public java.lang.String com.newdon.controller.NewdonContractController.update(com.newdon.entity.NewdonContract,org.springframework.ui.Model,java.lang.Integer)
+2018-12-14 21:33:03,523 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/contract/query]}" onto public java.lang.String com.newdon.controller.NewdonContractController.query(com.newdon.entity.NewdonContract,org.springframework.ui.Model,java.lang.Integer,java.lang.Integer)
+2018-12-14 21:33:03,523 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/contract/deleteById]}" onto public java.lang.String com.newdon.controller.NewdonContractController.deleteById(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 21:33:03,523 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/contract/insert],methods=[POST]}" onto public java.lang.String com.newdon.controller.NewdonContractController.addList(com.newdon.entity.NewdonContract,com.newdon.entity.NewdonCustomer,com.newdon.entity.BasicTechInfo,org.springframework.ui.Model)
+2018-12-14 21:33:03,524 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/contract/edit]}" onto public java.lang.String com.newdon.controller.NewdonContractController.edit(com.newdon.entity.NewdonContract,org.springframework.ui.Model,java.lang.Integer)
+2018-12-14 21:33:03,525 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/customer/add]}" onto public java.lang.String com.newdon.controller.NewdonCustomerController.add()
+2018-12-14 21:33:03,525 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/customer/update]}" onto public java.lang.String com.newdon.controller.NewdonCustomerController.update(com.newdon.entity.NewdonCustomer,org.springframework.ui.Model,java.lang.Integer)
+2018-12-14 21:33:03,525 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/customer/query]}" onto public java.lang.String com.newdon.controller.NewdonCustomerController.query(com.newdon.entity.NewdonCustomer,org.springframework.ui.Model,java.lang.Integer,java.lang.Integer)
+2018-12-14 21:33:03,525 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/customer/deleteById]}" onto public java.lang.String com.newdon.controller.NewdonCustomerController.deleteById(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 21:33:03,526 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/customer/insert],methods=[POST]}" onto public java.lang.String com.newdon.controller.NewdonCustomerController.addList(com.newdon.entity.NewdonCustomer,org.springframework.ui.Model)
+2018-12-14 21:33:03,526 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/customer/edit]}" onto public java.lang.String com.newdon.controller.NewdonCustomerController.edit(com.newdon.entity.NewdonCustomer,org.springframework.ui.Model,java.lang.Integer)
+2018-12-14 21:33:03,527 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/admin/newsEdit],methods=[GET]}" onto public java.lang.String com.newdon.controller.NewsController.newsEditGet(org.springframework.ui.Model,com.newdon.model.News)
+2018-12-14 21:33:03,528 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/admin/newsManage_{pageCurrent}_{pageSize}_{pageCount}]}" onto public java.lang.String com.newdon.controller.NewsController.newsManage(com.newdon.model.News,java.lang.Integer,java.lang.Integer,java.lang.Integer,org.springframework.ui.Model)
+2018-12-14 21:33:03,529 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/admin/newsEdit],methods=[POST]}" onto public java.lang.String com.newdon.controller.NewsController.newsEditPost(org.springframework.ui.Model,com.newdon.model.News,org.springframework.web.multipart.MultipartFile[],javax.servlet.http.HttpSession)
+2018-12-14 21:33:03,529 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/admin/newsEditState],methods=[POST]}" onto public com.newdon.model.ResObject<java.lang.Object> com.newdon.controller.NewsController.newsEditState(com.newdon.model.News)
+2018-12-14 21:33:03,558 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-14 21:33:03,558 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-14 21:33:03,561 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2018-12-14 21:33:03,595 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-14 21:33:04,104 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java:431] Registering beans for JMX exposure on startup
+2018-12-14 21:33:04,106 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java:916] Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-12-14 21:33:04,111 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java:671] Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-12-14 21:33:04,121 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:179] Initializing ProtocolHandler ["http-nio-80"]
+2018-12-14 21:33:04,130 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:179] Starting ProtocolHandler ["http-nio-80"]
+2018-12-14 21:33:04,143 INFO [main] o.a.t.u.n.NioSelectorPool [DirectJDKLog.java:179] Using a shared selector for servlet write/read
+2018-12-14 21:33:04,161 INFO [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:201] Tomcat started on port(s): 80 (http)
+2018-12-14 21:33:04,165 INFO [main] c.n.NewdonApplication [StartupInfoLogger.java:57] Started NewdonApplication in 4.309 seconds (JVM running for 6.134)
+2018-12-14 21:33:12,109 INFO [http-nio-80-exec-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:179] Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-12-14 21:33:12,110 INFO [http-nio-80-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:489] FrameworkServlet 'dispatcherServlet': initialization started
+2018-12-14 21:33:12,151 INFO [http-nio-80-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:508] FrameworkServlet 'dispatcherServlet': initialization completed in 41 ms
+2018-12-14 21:33:12,256 INFO [http-nio-80-exec-1] o.t.TemplateEngine [TemplateEngine.java:825] [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-12-14 21:33:12,285 INFO [http-nio-80-exec-1] o.t.t.AbstractTemplateResolver [AbstractTemplateResolver.java:99] [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2018-12-14 21:33:12,285 INFO [http-nio-80-exec-1] o.t.t.AbstractTemplateResolver [AbstractTemplateResolver.java:110] [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-12-14 21:33:12,286 INFO [http-nio-80-exec-1] o.t.m.AbstractMessageResolver [AbstractMessageResolver.java:72] [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-12-14 21:33:12,286 INFO [http-nio-80-exec-1] o.t.m.AbstractMessageResolver [AbstractMessageResolver.java:78] [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-12-14 21:33:12,288 INFO [http-nio-80-exec-1] o.t.T.CONFIG [ConfigurationPrinterHelper.java:123] [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * XML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * XHTML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-12-14 21:33:12,288 INFO [http-nio-80-exec-1] o.t.TemplateEngine [TemplateEngine.java:838] [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2018-12-14 21:37:15,432 INFO [main] c.n.NewdonApplication [StartupInfoLogger.java:48] Starting NewdonApplication on Rlserim-TF with PID 896 (D:\BaiduYunDownload\newdon\newdon-contract-manage\target\classes started by Rlserim in D:\BaiduYunDownload\newdon\newdon-contract-manage)
+2018-12-14 21:37:15,437 INFO [main] c.n.NewdonApplication [SpringApplication.java:593] No active profile set, falling back to default profiles: default
+2018-12-14 21:37:15,764 INFO [background-preinit] o.h.v.i.u.Version [Version.java:30] HV000001: Hibernate Validator 5.3.5.Final
+2018-12-14 21:37:15,813 INFO [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java:583] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@31bcf236: startup date [Fri Dec 14 21:37:15 CST 2018]; root of context hierarchy
+2018-12-14 21:37:18,101 INFO [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:89] Tomcat initialized with port(s): 80 (http)
+2018-12-14 21:37:18,116 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:179] Starting service [Tomcat]
+2018-12-14 21:37:18,117 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:179] Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-12-14 21:37:18,331 INFO [localhost-startStop-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:179] Initializing Spring embedded WebApplicationContext
+2018-12-14 21:37:18,332 INFO [localhost-startStop-1] o.s.w.c.ContextLoader [EmbeddedWebApplicationContext.java:276] Root WebApplicationContext: initialization completed in 2519 ms
+2018-12-14 21:37:18,776 INFO [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean [ServletRegistrationBean.java:190] Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-14 21:37:18,794 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-14 21:37:18,795 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-14 21:37:18,798 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-14 21:37:18,798 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-14 21:37:19,439 INFO [main] c.a.d.p.DruidDataSource [DruidDataSource.java:721] {dataSource-1} inited
+2018-12-14 21:37:21,352 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter [RequestMappingHandlerAdapter.java:534] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@31bcf236: startup date [Fri Dec 14 21:37:15 CST 2018]; root of context hierarchy
+2018-12-14 21:37:21,467 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/basic/add]}" onto public java.lang.String com.newdon.controller.BasicTechInfoController.add()
+2018-12-14 21:37:21,470 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/basic/update]}" onto public java.lang.String com.newdon.controller.BasicTechInfoController.update(com.newdon.entity.BasicTechInfo,org.springframework.ui.Model,java.lang.Integer)
+2018-12-14 21:37:21,471 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/basic/query]}" onto public java.lang.String com.newdon.controller.BasicTechInfoController.query(com.newdon.entity.BasicTechInfo,org.springframework.ui.Model,java.lang.Integer,java.lang.Integer)
+2018-12-14 21:37:21,471 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/basic/insert],methods=[POST]}" onto public java.lang.String com.newdon.controller.BasicTechInfoController.addList(com.newdon.entity.BasicTechInfo,org.springframework.ui.Model)
+2018-12-14 21:37:21,472 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/basic/deleteById]}" onto public java.lang.String com.newdon.controller.BasicTechInfoController.deleteById(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 21:37:21,472 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/basic/edit]}" onto public java.lang.String com.newdon.controller.BasicTechInfoController.edit(com.newdon.entity.BasicTechInfo,org.springframework.ui.Model,java.lang.Integer)
+2018-12-14 21:37:21,474 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/page/{page}]}" onto public java.lang.String com.newdon.controller.LoginController.page(java.lang.String)
+2018-12-14 21:37:21,474 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/getin]}" onto public java.lang.String com.newdon.controller.LoginController.loginIn(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.String,org.springframework.ui.Model)
+2018-12-14 21:37:21,475 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/servererror]}" onto public java.lang.String com.newdon.controller.LoginController.servererror()
+2018-12-14 21:37:21,475 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/login]}" onto public java.lang.String com.newdon.controller.LoginController.login()
+2018-12-14 21:37:21,475 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/notfound]}" onto public java.lang.String com.newdon.controller.LoginController.notfound()
+2018-12-14 21:37:21,476 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/logout]}" onto public java.lang.String com.newdon.controller.LoginController.logout(javax.servlet.http.HttpServletRequest)
+2018-12-14 21:37:21,476 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/error]}" onto public java.lang.String com.newdon.controller.MainsiteErrorController.handleError(javax.servlet.http.HttpServletRequest)
+2018-12-14 21:37:21,480 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/contract/add]}" onto public java.lang.String com.newdon.controller.NewdonContractController.add()
+2018-12-14 21:37:21,480 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/contract/update]}" onto public java.lang.String com.newdon.controller.NewdonContractController.update(com.newdon.entity.NewdonContract,org.springframework.ui.Model,java.lang.Integer)
+2018-12-14 21:37:21,481 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/contract/query]}" onto public java.lang.String com.newdon.controller.NewdonContractController.query(com.newdon.entity.NewdonContract,org.springframework.ui.Model,java.lang.Integer,java.lang.Integer)
+2018-12-14 21:37:21,481 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/contract/insert],methods=[POST]}" onto public java.lang.String com.newdon.controller.NewdonContractController.addList(com.newdon.entity.NewdonContract,com.newdon.entity.NewdonCustomer,com.newdon.entity.BasicTechInfo,org.springframework.ui.Model)
+2018-12-14 21:37:21,481 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/contract/deleteById]}" onto public java.lang.String com.newdon.controller.NewdonContractController.deleteById(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 21:37:21,482 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/contract/edit]}" onto public java.lang.String com.newdon.controller.NewdonContractController.edit(com.newdon.entity.NewdonContract,org.springframework.ui.Model,java.lang.Integer)
+2018-12-14 21:37:21,484 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/customer/add]}" onto public java.lang.String com.newdon.controller.NewdonCustomerController.add()
+2018-12-14 21:37:21,485 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/customer/update]}" onto public java.lang.String com.newdon.controller.NewdonCustomerController.update(com.newdon.entity.NewdonCustomer,org.springframework.ui.Model,java.lang.Integer)
+2018-12-14 21:37:21,485 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/customer/query]}" onto public java.lang.String com.newdon.controller.NewdonCustomerController.query(com.newdon.entity.NewdonCustomer,org.springframework.ui.Model,java.lang.Integer,java.lang.Integer)
+2018-12-14 21:37:21,486 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/customer/insert],methods=[POST]}" onto public java.lang.String com.newdon.controller.NewdonCustomerController.addList(com.newdon.entity.NewdonCustomer,org.springframework.ui.Model)
+2018-12-14 21:37:21,487 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/customer/deleteById]}" onto public java.lang.String com.newdon.controller.NewdonCustomerController.deleteById(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 21:37:21,487 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/customer/edit]}" onto public java.lang.String com.newdon.controller.NewdonCustomerController.edit(com.newdon.entity.NewdonCustomer,org.springframework.ui.Model,java.lang.Integer)
+2018-12-14 21:37:21,490 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/admin/newsEditState],methods=[POST]}" onto public com.newdon.model.ResObject<java.lang.Object> com.newdon.controller.NewsController.newsEditState(com.newdon.model.News)
+2018-12-14 21:37:21,491 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/admin/newsManage_{pageCurrent}_{pageSize}_{pageCount}]}" onto public java.lang.String com.newdon.controller.NewsController.newsManage(com.newdon.model.News,java.lang.Integer,java.lang.Integer,java.lang.Integer,org.springframework.ui.Model)
+2018-12-14 21:37:21,492 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/admin/newsEdit],methods=[GET]}" onto public java.lang.String com.newdon.controller.NewsController.newsEditGet(org.springframework.ui.Model,com.newdon.model.News)
+2018-12-14 21:37:21,495 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/admin/newsEdit],methods=[POST]}" onto public java.lang.String com.newdon.controller.NewsController.newsEditPost(org.springframework.ui.Model,com.newdon.model.News,org.springframework.web.multipart.MultipartFile[],javax.servlet.http.HttpSession)
+2018-12-14 21:37:21,550 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-14 21:37:21,550 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-14 21:37:21,554 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2018-12-14 21:37:21,634 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:362] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-14 21:37:22,682 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java:431] Registering beans for JMX exposure on startup
+2018-12-14 21:37:22,688 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java:916] Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-12-14 21:37:22,704 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java:671] Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-12-14 21:37:22,722 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:179] Initializing ProtocolHandler ["http-nio-80"]
+2018-12-14 21:37:22,750 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:179] Starting ProtocolHandler ["http-nio-80"]
+2018-12-14 21:37:22,775 INFO [main] o.a.t.u.n.NioSelectorPool [DirectJDKLog.java:179] Using a shared selector for servlet write/read
+2018-12-14 21:37:22,818 INFO [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:201] Tomcat started on port(s): 80 (http)
+2018-12-14 21:37:22,829 INFO [main] c.n.NewdonApplication [StartupInfoLogger.java:57] Started NewdonApplication in 7.885 seconds (JVM running for 9.868)
+2018-12-14 21:37:27,964 INFO [http-nio-80-exec-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:179] Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-12-14 21:37:27,964 INFO [http-nio-80-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:489] FrameworkServlet 'dispatcherServlet': initialization started
+2018-12-14 21:37:28,008 INFO [http-nio-80-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:508] FrameworkServlet 'dispatcherServlet': initialization completed in 44 ms
+2018-12-14 21:37:28,335 INFO [http-nio-80-exec-4] o.t.TemplateEngine [TemplateEngine.java:825] [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-12-14 21:37:28,372 INFO [http-nio-80-exec-4] o.t.t.AbstractTemplateResolver [AbstractTemplateResolver.java:99] [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2018-12-14 21:37:28,372 INFO [http-nio-80-exec-4] o.t.t.AbstractTemplateResolver [AbstractTemplateResolver.java:110] [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-12-14 21:37:28,372 INFO [http-nio-80-exec-4] o.t.m.AbstractMessageResolver [AbstractMessageResolver.java:72] [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-12-14 21:37:28,372 INFO [http-nio-80-exec-4] o.t.m.AbstractMessageResolver [AbstractMessageResolver.java:78] [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-12-14 21:37:28,375 INFO [http-nio-80-exec-4] o.t.T.CONFIG [ConfigurationPrinterHelper.java:123] [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * XML
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * HTML5
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-12-14 21:37:28,376 INFO [http-nio-80-exec-4] o.t.TemplateEngine [TemplateEngine.java:838] [THYMELEAF] TEMPLATE ENGINE INITIALIZED
