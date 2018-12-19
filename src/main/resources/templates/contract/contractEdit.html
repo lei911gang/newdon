@@ -76,7 +76,18 @@
                                 </div>
                                 <div class="form-group"><label class="col-sm-2 control-label">合同类别：</label>
                                     <div class="col-sm-10">
-                                        <input id="contractCategory" name="contractCategory" type="text" class="form-control" th:value="${contract.contractCategory}"/>
+                                        <!--<input id="contractCategory" name="contractCategory" type="text" class="form-control" th:value="${contract.contractCategory}"/>-->
+                                        <select name="contractCategory" id="contractCategory" class="form-control" >
+                                            <option value="ISO27001认证" th:selected="${contract.contractCategory=='ISO27001认证'}">ISO27001认证</option>
+                                            <option value="安全硬件采购" th:selected="${contract.contractCategory=='安全硬件采购'}">安全硬件采购</option>
+                                            <option value="等保测评服务" th:selected="${contract.contractCategory=='等保测评服务'}">等保测评服务</option>
+                                            <option value="等保分包服务" th:selected="${contract.contractCategory=='等保分包服务'}">等保分包服务</option>
+                                            <option value="等保整改服务" th:selected="${contract.contractCategory=='等保整改服务'}">等保整改服务</option>
+                                            <option value="等保咨询服务" th:selected="${contract.contractCategory=='等保咨询服务'}">等保咨询服务</option>
+                                            <option value="等保总包服务" th:selected="${contract.contractCategory=='等保总包服务'}">等保总包服务</option>
+                                            <option value="风险评估" th:selected="${contract.contractCategory=='风险评估'}">风险评估</option>
+                                            <option value="渗透测试" th:selected="${contract.contractCategory=='渗透测试'}">渗透测试</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="form-group"><label class="col-sm-2 control-label">签署日期：</label>
@@ -96,7 +107,19 @@
                                 </div>
                                 <div class="form-group"><label class="col-sm-2 control-label">服务内容：</label>
                                     <div class="col-sm-10">
-                                        <input id="serviceContent" name="serviceContent" type="text" class="form-control" th:value="${contract.serviceContent}"/>
+                                        <!--<input id="serviceContent" name="serviceContent" type="text" class="form-control" th:value="${contract.serviceContent}"/>-->
+                                        <select name="serviceContent" id="serviceContent" class="form-control" >
+                                            <option value="评测" th:selected="${contract.serviceContent=='评测'}">评测</option>
+                                            <option value="整改" th:selected="${contract.serviceContent=='整改'}">整改</option>
+                                            <option value="咨询" th:selected="${contract.serviceContent=='咨询'}">咨询</option>
+                                            <option value="评测+整改" th:selected="${contract.serviceContent=='评测+整改'}">评测+整改</option>
+                                            <option value="整改+咨询" th:selected="${contract.serviceContent=='整改+咨询'}">整改+咨询</option>
+                                            <option value="评测+咨询" th:selected="${contract.serviceContent=='评测+咨询'}">评测+咨询</option>
+                                            <option value="评测+整改+咨询" th:selected="${contract.serviceContent=='评测+整改+咨询'}">评测+整改+咨询</option>
+                                            <option value="常规安装实施" th:selected="${contract.serviceContent=='常规安装实施'}">常规安装实施</option>
+                                            <option value="风险评估" th:selected="${contract.serviceContent=='风险评估'}">风险评估</option>
+                                            <option value="渗透测试" th:selected="${contract.serviceContent=='渗透测试'}">渗透测试</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="form-group"><label class="col-sm-2 control-label">存量&amp;增量：</label>
@@ -104,6 +127,7 @@
                                         <select name="increaseOrStock" id="increaseOrStock" class="form-control" >
                                             <option value="存量" th:selected="${contract.increaseOrStock=='存量'}">存量</option>
                                             <option value="增量" th:selected="${contract.increaseOrStock=='增量'}">增量</option>
+                                            <option value="企业" th:selected="${contract.increaseOrStock=='企业'}">企业</option>
                                         </select>
                                     </div>
                                 </div>
@@ -111,19 +135,25 @@
                                     <div class="col-sm-10">
                                         <select name="informationSource" id="informationSource" class="form-control" >
                                             <option value="自跑" th:selected="${contract.informationSource=='自跑'}">自跑</option>
-                                            <option value="互联网" th:selected="${contract.informationSource=='互联网'}">互联网</option>
                                             <option value="渠道" th:selected="${contract.informationSource=='渠道'}">渠道</option>
+                                            <option value="嘉定" th:selected="${contract.informationSource=='嘉定'}">嘉定</option>
+                                            <option value="网络推广" th:selected="${contract.informationSource=='网络推广'}">网络推广</option>
+                                            <option value="测评机构" th:selected="${contract.informationSource=='测评机构'}">测评机构</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="form-group"><label class="col-sm-2 control-label">合作测评机构：</label>
                                     <div class="col-sm-10">
                                         <select name="evaluationOrganization" id="evaluationOrganization" class="form-control" >
-                                            <option value="国家网络与信息系统安全产品质量监督检验中心" th:selected="${contract.evaluationOrganization=='国家网络与信息系统安全产品质量监督检验中心'}">国家网络与信息系统安全产品质量监督检验中心</option>
-                                            <option value="上海市信息安全测评认证中心" th:selected="${contract.evaluationOrganization=='上海市信息安全测评认证中心'}">上海市信息安全测评认证中心</option>
-                                            <option value="上海交通大学(信息安全服务技术研究实验室)" th:selected="${contract.evaluationOrganization=='上海交通大学(信息安全服务技术研究实验室)'}">上海交通大学(信息安全服务技术研究实验室)</option>
+                                            <option value="无" th:selected="${contract.evaluationOrganization=='无'}">无</option>
+                                            <option value="SGS&amp;UAKS" th:selected="${contract.evaluationOrganization=='SGS&amp;UAKS'}">SGS&amp;UAKS</option>
+                                            <option value="公安部第一研究所" th:selected="${contract.evaluationOrganization=='公安部第一研究所'}">公安部第一研究所</option>
+                                            <option value="公安部第三研究所" th:selected="${contract.evaluationOrganization=='公安部第三研究所'}">公安部第三研究所</option>
+                                            <option value="浙江省电子信息产品检验所" th:selected="${contract.evaluationOrganization=='浙江省电子信息产品检验所'}">浙江省电子信息产品检验所</option>
                                             <option value="上海计算机软件技术开发中心" th:selected="${contract.evaluationOrganization=='上海计算机软件技术开发中心'}">上海计算机软件技术开发中心</option>
                                             <option value="上海市网络技术综合应用研究所" th:selected="${contract.evaluationOrganization=='上海市网络技术综合应用研究所'}">上海市网络技术综合应用研究所</option>
+                                            <option value="浙江电子产品质量监督检验研究所" th:selected="${contract.evaluationOrganization=='浙江电子产品质量监督检验研究所'}">浙江电子产品质量监督检验研究所</option>
+                                            <option value="中国信息安全测评中心华中测评中心" th:selected="${contract.evaluationOrganization=='中国信息安全测评中心华中测评中心'}">中国信息安全测评中心华中测评中心</option>
                                         </select>
                                     </div>
                                 </div>
@@ -131,9 +161,8 @@
                                     <div class="col-sm-10">
                                         <select name="procurementMode" id="procurementMode" class="form-control" >
                                             <option value="公开招标" th:selected="${contract.procurementMode=='公开招标'}">公开招标</option>
-                                            <option value="竞争性谈判" th:selected="${contract.procurementMode=='竞争性谈判'}">竞争性谈判</option>
-                                            <option value="上会审核" th:selected="${contract.procurementMode=='上会审核'}">上会审核</option>
-                                            <option value="单一来源" th:selected="${contract.procurementMode=='单一来源'}">单一来源</option>
+                                            <option value="入围邀标" th:selected="${contract.procurementMode=='入围邀标'}">入围邀标</option>
+                                            <option value="入围直签" th:selected="${contract.procurementMode=='入围直签'}">入围直签</option>
                                             <option value="直签" th:selected="${contract.procurementMode=='直签'}">直签</option>
                                         </select>
                                     </div>

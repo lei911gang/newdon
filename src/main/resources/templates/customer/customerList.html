@@ -65,8 +65,9 @@
                                     <div class="col-sm-2 m-b-xs">
                                         <select name="customerCategory" id="customerCategory" class="form-control">
                                             <option value="" selected="selected">--请选择客户类别--</option>
+                                            <option value="合作伙伴" >合作伙伴</option>
                                             <option value="终端客户" >终端客户</option>
-                                            <option value="分包" >分包</option>
+                                            <option value="终端用户" >终端用户</option>
                                         </select>
                                     </div>
                                     <div class="col-sm-2 m-b-xs">
@@ -75,9 +76,28 @@
                                                type="text" th:value="null"/>
                                     </div>
                                     <div class="col-sm-2 m-b-xs">
-                                        <input id="customerIndustry" name="customerIndustry" placeholder="客户行业"
+                                        <!--<input id="customerIndustry" name="customerIndustry" placeholder="客户行业"
                                                class="form-control"
-                                               type="text" th:value="null"/>
+                                               type="text" th:value="null"/>-->
+                                        <select name="customerIndustry" id="customerIndustry" class="form-control">
+                                            <option value="" selected="selected">--请选择客户行业--</option>
+                                            <option value="传媒" >传媒</option>
+                                            <option value="建筑" >建筑</option>
+                                            <option value="交通" >交通</option>
+                                            <option value="教育" >教育</option>
+                                            <option value="金融" >金融</option>
+                                            <option value="科技" >科技</option>
+                                            <option value="旅游" >旅游</option>
+                                            <option value="食品" >食品</option>
+                                            <option value="铁路" >铁路</option>
+                                            <option value="医疗" >医疗</option>
+                                            <option value="政府" >政府</option>
+                                            <option value="房地产" >房地产</option>
+                                            <option value="互联网" >互联网</option>
+                                            <option value="信息技术" >信息技术</option>
+                                            <option value="产权交易" >产权交易</option>
+                                            <option value="跨国零售" >跨国零售</option>
+                                        </select>
                                     </div>
                                     <div class="col-sm-2 m-b-xs">
                                         <input id="minceIndustry" name="minceIndustry" placeholder="细分行业" class="form-control"
@@ -123,15 +143,15 @@
                                 <table class=" table table-hover" data-page-size="10">
                                     <thead>
                                     <tr>
-                                        <th width="5%">序号</th>
-                                        <th width="10%">客户名称</th>
-                                        <th width="10%">联系人</th>
-                                        <th width="10%">联系方式</th>
-                                        <th width="10%">客户类别</th>
-                                        <th width="10%">客户地区</th>
-                                        <th width="15%">客户行业</th>
-                                        <th width="15%">细分行业</th>
-                                        <th width="15%">行业性质</th>
+                                        <th width="7%">序号</th>
+                                        <th width="11%">客户名称</th>
+                                        <th width="11%">联系人</th>
+                                        <th width="11%">联系方式</th>
+                                        <th width="11%">客户类别</th>
+                                        <th width="11%">客户地区</th>
+                                        <th width="11%">客户行业</th>
+                                        <th width="11%">细分行业</th>
+                                        <th width="11%">行业性质</th>
                                         <th>操作</th>
                                     </tr>
                                     </thead>
