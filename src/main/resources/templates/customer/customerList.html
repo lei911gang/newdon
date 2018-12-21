@@ -100,12 +100,58 @@
                                         </select>
                                     </div>
                                     <div class="col-sm-2 m-b-xs">
-                                        <input id="minceIndustry" name="minceIndustry" placeholder="细分行业" class="form-control"
-                                               type="text" th:value="null"/>
+                                        <!--<input id="minceIndustry" name="minceIndustry" placeholder="细分行业" class="form-control"-->
+                                               <!--type="text" th:value="null"/>-->
+                                        <select name="minceIndustry" id="minceIndustry" class="form-control" >
+                                            <option value="" selected="selected">--请选择细分行业--</option>
+                                            <option value="P2P">P2P</option>
+                                            <option value="安全">安全</option>
+                                            <option value="保险">保险</option>
+                                            <option value="财务">财务</option>
+                                            <option value="电商">电商</option>
+                                            <option value="高校">高校</option>
+                                            <option value="航运">航运</option>
+                                            <option value="环保">环保</option>
+                                            <option value="集成">集成</option>
+                                            <option value="家政">家政</option>
+                                            <option value="检测">检测</option>
+                                            <option value="交通">交通</option>
+                                            <option value="教育">教育</option>
+                                            <option value="酒店">酒店</option>
+                                            <option value="旅游">旅游</option>
+                                            <option value="生物">生物</option>
+                                            <option value="物流">物流</option>
+                                            <option value="医疗">医疗</option>
+                                            <option value="游戏">游戏</option>
+                                            <option value="园区">园区</option>
+                                            <option value="证券">证券</option>
+                                            <option value="政府">政府</option>
+                                            <option value="云计算">云计算</option>
+                                            <option value="房地产">房地产</option>
+                                            <option value="物联网">物联网</option>
+                                            <option value="大屏幕">大屏幕</option>
+                                            <option value="大数据">大数据</option>
+                                            <option value="信息资讯">信息资讯</option>
+                                            <option value="食品制造">食品制造</option>
+                                            <option value="软件开发">软件开发</option>
+                                            <option value="建筑行业">建筑行业</option>
+                                            <option value="产权技术">产权技术</option>
+                                            <option value="高职院校">高职院校</option>
+                                            <option value="百货/连锁/商超/宠物">百货/连锁/商超/宠物</option>
+                                        </select>
                                     </div>
                                     <div class="col-sm-2 m-b-xs">
-                                        <input id="industryNature" name="industryNature" placeholder="行业性质" class="form-control"
-                                               type="text" th:value="null"/>
+                                        <!--<input id="industryNature" name="industryNature" placeholder="行业性质" class="form-control"-->
+                                               <!--type="text" th:value="null"/>-->
+                                        <select name="industryNature" id="industryNature" class="form-control" >
+                                            <option value="" selected="selected">--请选择行业性质--</option>
+                                            <option value="国企">国企</option>
+                                            <option value="民企">民企</option>
+                                            <option value="民营">民营</option>
+                                            <option value="外企">外企</option>
+                                            <option value="政府">政府</option>
+                                            <option value="事业单位">事业单位</option>
+                                        </select>
                                     </div>
                                     <div class="col-sm-2 m-b-xs">
                                         <button class="btn btn-primary btn-block" type="submit"><i
@@ -144,14 +190,14 @@
                                     <thead>
                                     <tr>
                                         <th width="7%">序号</th>
-                                        <th width="11%">客户名称</th>
-                                        <th width="11%">联系人</th>
-                                        <th width="11%">联系方式</th>
-                                        <th width="11%">客户类别</th>
-                                        <th width="11%">客户地区</th>
-                                        <th width="11%">客户行业</th>
+                                        <th width="18%">客户名称</th>
+                                        <th width="7%">联系人</th>
+                                        <th width="9%">联系方式</th>
+                                        <th width="9%">客户类别</th>
+                                        <th width="15%">客户地区</th>
+                                        <th width="9%">客户行业</th>
                                         <th width="11%">细分行业</th>
-                                        <th width="11%">行业性质</th>
+                                        <th width="8%">行业性质</th>
                                         <th>操作</th>
                                     </tr>
                                     </thead>

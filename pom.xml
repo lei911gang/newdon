@@ -41,6 +41,13 @@
         <mysql-connector.version>5.1.46</mysql-connector.version>
     </properties>
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/commons-codec/commons-codec -->
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>1.11</version>
+        </dependency>
+
         <!--thymeleaf  -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
