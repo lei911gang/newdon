@@ -80,6 +80,9 @@
                                                type="text" th:value="null"/>-->
                                         <select name="customerIndustry" id="customerIndustry" class="form-control">
                                             <option value="" selected="selected">--请选择客户行业--</option>
+                                            <option value="汽车" >汽车</option>
+                                            <option value="化工" >化工</option>
+                                            <option value="生物" >生物</option>
                                             <option value="传媒" >传媒</option>
                                             <option value="建筑" >建筑</option>
                                             <option value="交通" >交通</option>
@@ -119,6 +122,7 @@
                                             <option value="酒店">酒店</option>
                                             <option value="旅游">旅游</option>
                                             <option value="生物">生物</option>
+                                            <option value="医药">医药</option>
                                             <option value="物流">物流</option>
                                             <option value="医疗">医疗</option>
                                             <option value="游戏">游戏</option>
@@ -128,22 +132,23 @@
                                             <option value="云计算">云计算</option>
                                             <option value="房地产">房地产</option>
                                             <option value="物联网">物联网</option>
-                                            <option value="大屏幕">大屏幕</option>
                                             <option value="大数据">大数据</option>
+                                            <option value="户外大屏">户外大屏</option>
                                             <option value="信息资讯">信息资讯</option>
+                                            <option value="消费金融">消费金融</option>
                                             <option value="食品制造">食品制造</option>
                                             <option value="软件开发">软件开发</option>
-                                            <option value="建筑行业">建筑行业</option>
+                                            <option value="建筑工程">建筑工程</option>
                                             <option value="产权技术">产权技术</option>
                                             <option value="高职院校">高职院校</option>
-                                            <option value="连锁/商超">连锁/商超</option>
+                                            <option value="连锁商超">连锁商超</option>
                                         </select>
                                     </div>
                                     <div class="col-sm-2 m-b-xs">
                                         <!--<input id="industryNature" name="industryNature" placeholder="行业性质" class="form-control"-->
                                                <!--type="text" th:value="null"/>-->
                                         <select name="industryNature" id="industryNature" class="form-control" >
-                                            <option value="" selected="selected">--请选择行业性质--</option>
+                                            <option value="" selected="selected">--请选择客户性质--</option>
                                             <option value="国企">国企</option>
                                             <option value="民企">民企</option>
                                             <option value="外企">外企</option>
@@ -195,7 +200,7 @@
                                         <th width="11%">客户地区</th>
                                         <th width="9%">客户行业</th>
                                         <th width="9%">细分行业</th>
-                                        <th width="8%">行业性质</th>
+                                        <th width="8%">客户性质</th>
                                         <th>操作</th>
                                     </tr>
                                     </thead>
