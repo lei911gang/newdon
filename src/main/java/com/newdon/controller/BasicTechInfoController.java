@@ -122,6 +122,9 @@ public class BasicTechInfoController {
         if (StringUtils.isNotBlank(basicTechInfo.getSystemLevel())) {
             wrapper.like("system_level", basicTechInfo.getSystemLevel());
         }
+        if (basicTechInfo.getSystemCount()>0) {
+            wrapper.eq("system_count", basicTechInfo.getSystemCount());
+        }
         if (null != basicTechInfo.getDeliverStart() && null != basicTechInfo.getDeliverEnd()) {
             wrapper.between("deliver_date", basicTechInfo.getDeliverStart(), basicTechInfo.getDeliverEnd());
         }

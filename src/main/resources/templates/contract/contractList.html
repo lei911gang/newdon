@@ -47,7 +47,7 @@
                 <div class="col-lg-12">
                     <div class="ibox float-e-margins">
                         <div class="ibox-title">
-                            <h5>搜索&amp;操作</h5>
+                            <h5>搜索&amp;筛选</h5>
                             <div class="ibox-tools">
                                 <a class="collapse-link">
                                     <i class="fa fa-chevron-up"></i>
@@ -58,12 +58,12 @@
                         <div class="ibox-content" style="display: block;">
                             <form action="/contract/query" method="post">
                                 <div class="row">
-                                    <div class="col-sm-2 m-b-xs"><br/>
+                                    <div class="col-sm-2 m-b-xs">
                                         <input id="contractNumber" name="contractNumber" placeholder="合同编号"
                                                class="form-control"
                                                type="text" th:value="null"/>
                                     </div>
-                                    <div class="col-sm-2 m-b-xs"><br/>
+                                    <div class="col-sm-2 m-b-xs">
                                         <select name="contractCategory" id="contractCategory" class="form-control">
                                             <option value="" selected="selected">--请选择合同类别--</option>
                                             <option value="ISO27001认证">ISO27001认证</option>
@@ -73,26 +73,33 @@
                                             <option value="等保整改服务">等保整改服务</option>
                                             <option value="等保咨询服务">等保咨询服务</option>
                                             <option value="等保总包服务">等保总包服务</option>
-                                            <option value="风险评估">风险评估</option>
-                                            <option value="渗透测试">渗透测试</option>
+                                            <option value="APP安全评估">APP安全评估</option>
+                                            <option value="风险评估服务">风险评估服务</option>
+                                            <option value="渗透测试服务">渗透测试服务</option>
+                                            <option value="漏洞扫描服务">漏洞扫描服务</option>
+                                            <option value="安全运维服务">安全运维服务</option>
+                                            <option value="代码审计服务">代码审计服务</option>
+                                            <option value="主机基线服务">主机基线服务</option>
+                                            <option value="安全培训服务">安全培训服务</option>
+                                            <option value="应急响应服务">应急响应服务</option>
                                         </select>
                                     </div>
-                                    <div class="col-sm-2 m-b-xs">签署日期(开始)
+                                    <div class="col-sm-2 m-b-xs">
                                         <input id="signStart" name="signStart" placeholder="签署日期(开始)"
                                                class="form-control"
-                                               type="date" th:value="1970-01-01"/>
+                                               type="date" th:value="2018-01-01"/>
                                     </div>
-                                    <div class="col-sm-2 m-b-xs">签署日期(结束)
+                                    <div class="col-sm-2 m-b-xs">
                                         <input id="signEnd" name="signEnd" placeholder="签署日期(结束)"
                                                class="form-control"
-                                               type="date" th:value="9999-01-01"/>
+                                               type="date" th:value="2025-01-01"/>
                                     </div>
-                                    <div class="col-sm-2 m-b-xs"><br/>
+                                    <div class="col-sm-2 m-b-xs">
                                         <input id="moneyStart" name="moneyStart" placeholder="合同金额(开始)"
                                                class="form-control"
                                                type="number" th:value="null"/>
                                     </div>
-                                    <div class="col-sm-2 m-b-xs"><br/>
+                                    <div class="col-sm-2 m-b-xs">
                                         <input id="moneyEnd" name="moneyEnd" placeholder="合同金额(结束)" class="form-control"
                                                type="number" th:value="null"/>
                                     </div>
@@ -106,13 +113,12 @@
                                             <option value="" selected="selected">--请选择存量或增量--</option>
                                             <option value="存量">存量</option>
                                             <option value="增量">增量</option>
-                                            <option value="企业">企业</option>
                                         </select>
                                     </div>
                                     <div class="col-sm-2 m-b-xs">
                                         <select name="informationSource" id="informationSource" class="form-control">
                                             <option value="" selected="selected">--请选择信息来源--</option>
-                                            <option value="自跑">自跑</option>
+                                            <option value="自有">自有</option>
                                             <option value="渠道">渠道</option>
                                             <option value="网络推广">网络推广</option>
                                             <option value="测评机构">测评机构</option>
@@ -123,13 +129,18 @@
                                                 class="form-control">
                                             <option value="" selected="selected">--请选择合作测评机构--</option>
                                             <option value="无">无</option>
-                                            <option value="SGS&amp;UAKS">SGS&amp;UAKS</option>
+                                            <option value="国家信息中心">国家信息中心</option>
                                             <option value="公安部第一研究所">公安部第一研究所</option>
                                             <option value="公安部第三研究所">公安部第三研究所</option>
-                                            <option value="浙江省电子信息产品检验所">浙江省电子信息产品检验所</option>
+                                            <option value="中国铁道科学研究院">中国铁道科学研究院</option>
+                                            <option value="北京地铁科技发展有限公司">北京地铁科技发展有限公司</option>
+                                            <option value="信息产业信息安全测评中心">信息产业信息安全测评中心</option>
+                                            <option value="通标标准技术服务有限公司">通标标准技术服务有限公司</option>
+                                            <option value="江苏安国信检测技术有限公司">江苏安国信检测技术有限公司</option>
                                             <option value="上海计算机软件技术开发中心">上海计算机软件技术开发中心</option>
                                             <option value="上海市网络技术综合应用研究所">上海市网络技术综合应用研究所</option>
                                             <option value="浙江电子产品质量监督检验研究所">浙江电子产品质量监督检验研究所</option>
+                                            <option value="电力行业信息安全等级保护测评中心">电力行业信息安全等级保护测评中心</option>
                                             <option value="中国信息安全测评中心华中测评中心">中国信息安全测评中心华中测评中心</option>
                                         </select>
                                     </div>
@@ -151,7 +162,7 @@
                                 <div class="col-sm-6 m-b-xs">
                                     <a th:href="@{add}" class="btn btn-white btn-sm" data-toggle="tooltip"
                                        data-placement="left" title="" data-original-title="Refresh inbox"><i
-                                            class="fa fa-plus"></i>&nbsp;&nbsp;&nbsp;&nbsp;新增合同&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                            class="fa fa-plus" style="color: red"></i><font color="red">&nbsp;&nbsp;&nbsp;&nbsp;合同录入&nbsp;&nbsp;&nbsp;&nbsp;</font></a>
                                 </div>
                                 <div class="col-sm-6 m-b-xs">
                                 </div>
@@ -175,19 +186,19 @@
                                 <table class=" table table-hover" data-page-size="10">
                                     <thead>
                                     <tr>
-                                        <th width="5%">序号</th>
-                                        <th width="7%">合同编号</th>
+                                        <th width="3%">序号</th>
+                                        <th width="6%">合同编号</th>
                                         <th width="8%">合同类别</th>
                                         <th width="7%">签署日期</th>
-                                        <th width="5%">业务人员</th>
-                                        <th width="7%">合同金额</th>
-                                        <th width="8%">服务内容</th>
-                                        <th width="5%">存量&amp;增量</th>
-                                        <th width="5%">信息来源</th>
-                                        <th width="16%">合作测评机构</th>
-                                        <th width="7%">采购方式</th>
-                                        <th width="10%">客户名称</th>
-                                        <th width="5%">技术信息</th>
+                                        <th width="6%">业务人员</th>
+                                        <th width="6%">合同金额</th>
+                                        <th width="10%">服务内容</th>
+                                        <th width="6%">存量增量</th>
+                                        <th width="6%">信息来源</th>
+                                        <th width="20%">合作测评机构</th>
+                                        <th width="6%">采购方式</th>
+                                        <th width="6%">客户名称</th>
+                                        <th width="6%">技术信息</th>
                                         <th>操作</th>
                                     </tr>
                                     </thead>
@@ -205,7 +216,7 @@
                                         <td th:text="${customer.evaluationOrganization}">Onions</td>
                                         <td th:text="${customer.procurementMode}">Onions</td>
                                         <td>
-                                            <a th:href="@{'/customer/query?tag=1&amp;customerName=' + ${customer.customerName}}" th:text="${customer.customerName}"/>
+                                            <a th:href="@{'/customer/query?tag=1&amp;customerName=' + ${customer.customerName}}" th:text="客户信息"/>
                                         </td>
                                         <td>
                                             <a th:href="@{'/basic/query?tag=1&amp;contractNumber=' + ${customer.contractNumber}}" th:text="技术信息"/>

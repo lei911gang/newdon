@@ -33,3 +33,4 @@ mybatis-plus:
   mapper-locations: classpath:mybatis/*.xml
   typeAliasesPackage: com.newdon.entity
 hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 5000
+spring.mvc.favicon.enabled: false

@@ -47,7 +47,7 @@
                 <div class="col-lg-12">
                     <div class="ibox float-e-margins">
                         <div class="ibox-title">
-                            <h5>搜索&amp;操作</h5>
+                            <h5>搜索&amp;筛选</h5>
                             <div class="ibox-tools">
                                 <a class="collapse-link">
                                     <i class="fa fa-chevron-up"></i>
@@ -86,7 +86,12 @@
                                             <option value="五级">五级</option>
                                         </select>
                                     </div>
-                                    <div class="col-sm-2 m-b-xs">交付日期(开始)
+                                    <div class="col-sm-2 m-b-xs">请输入系统数量
+                                        <input id="systemCount" name="systemCount" placeholder="系统数量"
+                                               class="form-control"
+                                               type="number" th:value="0"/>
+                                    </div>
+                                    <!--<div class="col-sm-2 m-b-xs">交付日期(开始)
                                         <input id="signStart" name="signStart" placeholder="交付日期(开始)"
                                                class="form-control"
                                                type="date" th:value="1970-01-01"/>
@@ -95,7 +100,7 @@
                                         <input id="deliverStart" name="deliverStart" placeholder="交付日期(结束)"
                                                class="form-control"
                                                type="date" th:value="9999-01-01"/>
-                                    </div>
+                                    </div>-->
                                     <div class="col-sm-2 m-b-xs">
                                         <button class="btn btn-primary btn-block" type="submit"><i
                                                 class="fa fa-search"></i>&nbsp;&nbsp;&nbsp;&nbsp;<strong>搜索</strong>
@@ -132,17 +137,17 @@
                                 <table class=" table table-hover" data-page-size="10">
                                     <thead>
                                     <tr>
-                                        <th width="7%">序号</th>
-                                        <th width="9%">合同编号</th>
-                                        <th width="16%">客户名称</th>
+                                        <th width="3%">序号</th>
+                                        <th width="5%">合同编号</th>
+                                        <th width="20%">客户名称</th>
                                         <th width="7%">项目经理</th>
-                                        <th width="6%">技术人员</th>
+                                        <th width="8%">技术人员</th>
                                         <th width="8%">基础环境</th>
-                                        <th width="6%">系统级别</th>
-                                        <th width="6%">系统数量</th>
-                                        <th width="11%">设备信息</th>
-                                        <th width="7%">硬件数量</th>
-                                        <th width="9%">交付日期</th>
+                                        <th width="8%">系统级别</th>
+                                        <th width="8%">系统数量</th>
+                                        <th width="11%">设备类别</th>
+                                        <th width="7%">设备数量</th>
+                                        <th width="9%">实施日期</th>
                                         <th>操作</th>
                                     </tr>
                                     </thead>

@@ -98,6 +98,7 @@
                                             <option value="混合架构" th:selected="${basic.basicEnv=='混合架构'}">混合架构</option>
                                             <option value="阿里云环境" th:selected="${basic.basicEnv=='阿里云环境'}">阿里云环境</option>
                                             <option value="腾讯云环境" th:selected="${basic.basicEnv=='腾讯云环境'}">腾讯云环境</option>
+                                            <option value="微软云环境" th:selected="${basic.basicEnv=='微软云环境'}">微软云环境</option>
                                             <option value="亚马逊云环境" th:selected="${basic.basicEnv=='亚马逊云环境'}">亚马逊云环境</option>
                                         </select>
                                     </div>
@@ -119,9 +120,18 @@
                                         <input id="systemCount" name="systemCount" type="number" class="form-control" th:value="${basic.systemCount}"/>
                                     </div>
                                 </div>
-                                <div class="form-group"><label class="col-sm-2 control-label">设备信息：</label>
+                                <div class="form-group"><label class="col-sm-2 control-label">设备类别：</label>
                                     <div class="col-sm-10">
-                                        <input id="deviceInfo" name="deviceInfo" type="text" class="form-control" th:value="${basic.deviceInfo}"/>
+                                        <select name="deviceInfo" id="deviceInfo" class="form-control" >
+                                            <option value="" selected="selected">--请选择设备类别--</option>
+                                            <option value="无">无</option>
+                                            <option value="下一代防火墙">下一代防火墙</option>
+                                            <option value="上网行为审计">上网行为审计</option>
+                                            <option value="日志审计系统">日志审计系统</option>
+                                            <option value="WEB应用防火墙">WEB应用防火墙</option>
+                                            <option value="数据库审计系统">数据库审计系统</option>
+                                            <option value="运维审计堡垒机">运维审计堡垒机</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="form-group"><label class="col-sm-2 control-label">硬件数量：</label>
@@ -129,7 +139,7 @@
                                         <input id="hardwareCount" name="hardwareCount" type="number" class="form-control" th:value="${basic.hardwareCount}"/>
                                     </div>
                                 </div>
-                                <div class="form-group"><label class="col-sm-2 control-label">交付日期：</label>
+                                <div class="form-group"><label class="col-sm-2 control-label">实施日期：</label>
                                     <div class="col-sm-10">
                                         <input id="deliverDate" name="deliverDate" type="date" class="form-control" th:value="${basic.deliverDate}"/>
                                     </div>
