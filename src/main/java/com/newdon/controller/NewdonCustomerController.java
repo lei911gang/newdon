@@ -79,7 +79,9 @@ public class NewdonCustomerController {
         } else {
             model.addAttribute("success", "修改成功!");
         }
-        Page<NewdonCustomer> page = this.newdonCustomerService.selectPage(new Page<>(pageNum, 10), new EntityWrapper<>());
+        EntityWrapper<NewdonCustomer> wrapper = new EntityWrapper<>();
+        wrapper.eq("status", 1);
+        Page<NewdonCustomer> page = this.newdonCustomerService.selectPage(new Page<>(pageNum, 10), wrapper);
         model.addAttribute("customerList", page.getRecords());
         model.addAttribute("customer", newdonCustomer);
         //获得当前页
