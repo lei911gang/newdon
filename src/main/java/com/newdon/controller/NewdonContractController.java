@@ -74,7 +74,9 @@ public class NewdonContractController {
         } else {
             model.addAttribute("success", "修改成功!");
         }
-        Page<NewdonContract> page = this.newdonContractService.selectPage(new Page<>(pageNum, 10), new EntityWrapper<>());
+        EntityWrapper<NewdonContract> wrapper = new EntityWrapper<>();
+        wrapper.eq("status", 1);
+        Page<NewdonContract> page = this.newdonContractService.selectPage(new Page<>(pageNum, 10), wrapper);
         model.addAttribute("customerList", page.getRecords());
         model.addAttribute("customer", newdonContract);
         //获得当前页
