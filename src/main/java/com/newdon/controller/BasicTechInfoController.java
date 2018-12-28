@@ -80,7 +80,9 @@ public class BasicTechInfoController {
         } else {
             model.addAttribute("success", "修改成功!");
         }
-        Page<BasicTechInfo> page = this.basicTechInfoService.selectPage(new Page<>(pageNum, 10), new EntityWrapper<>());
+        EntityWrapper<BasicTechInfo> wrapper = new EntityWrapper<>();
+        wrapper.eq("status", 1);
+        Page<BasicTechInfo> page = this.basicTechInfoService.selectPage(new Page<>(pageNum, 10), wrapper);
         model.addAttribute("basicList", page.getRecords());
         model.addAttribute("basic", basicTechInfo);
         //获得当前页
